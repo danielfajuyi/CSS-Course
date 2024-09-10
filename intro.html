@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <div class="entry-content">
+      <div class="toc-dropdown">
+        <div class="toc-toggle">Table of contents</div>
+        <div class="toc-panel">
+          <ul class="toc">
+            <ul class="toc-links">
+              <ul>
+                <li class="active"><a href="#what-is-css">What is CSS?</a></li>
+                <li class=""><a href="#css-history">&nbsp;CSS History</a></li>
+                <li class=""><a href="#css-editors">&nbsp;CSS Editors</a></li>
+                <li class=""><a href="#css-syntax">&nbsp;CSS Syntax</a></li>
+                <li class=""><a href="#css-comment">&nbsp;CSS Comment</a></li>
+                <li class="">
+                  <a href="#css-how-to">&nbsp;CSS How-To&nbsp;</a>
+                </li>
+                <li class=""><a href="#css-selectors">CSS Selectors</a></li>
+                <li class=""><a href="#css-colors">CSS Colors</a></li>
+                <li class="">
+                  <a href="#css-background">&nbsp;CSS Background</a>
+                </li>
+                <li class=""><a href="#css-border">CSS Border</a></li>
+                <li class=""><a href="#css-boxmodel">CSS BoxModel</a></li>
+                <li class="">
+                  <a href="#css-tutorial-faqs">CSS Tutorial FAQs</a>
+                </li>
+              </ul>
+            </ul>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="wp-block-heading" id="what-is-css">
+        <strong>What is CSS?</strong>
+      </h2>
+
+      <p>
+        CSS stands for Cascading Style Sheets. It&nbsp;is the language for
+        describing the presentation of Web pages, including colours, layout, and
+        fonts, thus making our web pages presentable to the users.
+      </p>
+
+      <p>
+        CSS is designed to make style sheets for the web. It is independent of
+        HTML and can be used with any XML-based markup language. Now let’s try
+        to break the acronym:
+      </p>
+
+      <ul>
+        <li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cascading: Falling of
+          Styles
+        </li>
+
+        <li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Style: Adding
+          designs/Styling our HTML tags
+        </li>
+
+        <li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sheets: Writing our
+          style in different documents
+        </li>
+      </ul>
+
+      <h2 class="wp-block-heading" id="css-history">
+        <strong>&nbsp;CSS History</strong>
+      </h2>
+
+      <ul>
+        <li>1994: First Proposed by Hakon Wium Lie on 10th October</li>
+
+        <li>
+          1996: CSS was published on 17th November with influencer Bert Bos
+        </li>
+
+        <li>Later he became co-author of CSS</li>
+
+        <li>1996: CSS became official with CSS was published in December</li>
+
+        <li>1997: Created CSS level 2 on 4th November&nbsp;</li>
+
+        <li>1998: Published on 12th May</li>
+      </ul>
+
+      <h2 class="wp-block-heading" id="css-editors">
+        <strong>&nbsp;CSS Editors</strong>
+      </h2>
+
+      <p>
+        Some of the popular editors that are best suited to wire CSS code are as
+        following:
+      </p>
+
+      <ol>
+        <li>Atom</li>
+
+        <li>Visual Studio Code</li>
+
+        <li>Brackets</li>
+
+        <li>Espresso(For Mac OS&nbsp; User)</li>
+
+        <li>Notepad++(Great for HTML &amp; CSS)</li>
+
+        <li>Komodo Edit (Simple)</li>
+
+        <li>Sublime Text (Best Editor)</li>
+      </ol>
+
+      <h2 class="wp-block-heading" id="css-syntax">
+        <strong>&nbsp;CSS Syntax</strong><br />
+      </h2>
+
+      <pre
+        class="wp-block-code"
+      ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+Selector {
+Property 1 : value;
+ Property 2 : value;
+Property 3 : value;
+}
+For example:
+h1
+{
+Color: red;
+Text-align: center;
+
+}
+#unique 
+{
+color: green;
+}
+
+
+</code></pre>
+
+      <ul>
+        <li>Selector: selects the element you want to target</li>
+
+        <li>
+          Always remains the same whether we apply internal or external
+          styling&nbsp;
+        </li>
+
+        <li>There are few basic selectors like tags, id’s, and classes</li>
+
+        <li>All forms this key-value pair</li>
+
+        <li>
+          Keys: properties(attributes) like color, font-size, background, width,
+          height,etc
+        </li>
+
+        <li>Value: values associated with these properties</li>
+      </ul>
+
+      <h2 class="wp-block-heading" id="css-comment">
+        <strong>&nbsp;CSS Comment</strong>
+      </h2>
+
+      <ul>
+        <li>Comments don’t render on the browser</li>
+
+        <li>Helps to understand our code better and makes it readable.</li>
+
+        <li>Helps to debug our code</li>
+
+        <li>
+          Two ways to&nbsp; comment:
+          <ul>
+            <li>Single line&nbsp;</li>
+          </ul>
+        </li>
+      </ul>
+
+      <pre
+        class="wp-block-code"
+      ><code> /*&lt;h6&gt; This represents the most/ least important line of the doc. &lt;/h6&gt;*/</code></pre>
+
+      <p>Here is how to comment out multiple lines:</p>
+
+      <pre
+        class="wp-block-code"
+      ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+/*
+h1
+{
+color: red;
+text-align: center;
+} 
+*/</code></pre>
+
+      <h2 class="wp-block-heading" id="css-how-to">
+        <strong>&nbsp;CSS How-To&nbsp;</strong><br />
+      </h2>
+
+      <ul>
+        <li>
+          There are 3 ways to write CSS in our HTML file.
+          <ul>
+            <li>Inline CSS</li>
+
+            <li>Internal CSS</li>
+
+            <li>External CSS</li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          Priority order
+          <ul>
+            <li>Inline &gt; Internal &gt; External</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p><strong>&nbsp;&nbsp;Inline CSS</strong></p>
+
+      <ul>
+        <li>Before CSS this was the only way to apply styles</li>
+
+        <li>Not an efficient way to write as it has a lot of redundancy</li>
+
+        <li>Self-contained&nbsp;</li>
+
+        <li>Uniquely applied on each element</li>
+
+        <li>The idea of separation of concerns was lost</li>
+
+        <li>Example:</li>
+      </ul>
+
+      <pre
+        class="wp-block-code"
+      ><code>&lt;h3 style=” color:red”&gt; Have a great day &lt;/h3&gt;
+&lt;p  style =” color: green”&gt; I did this , I did that &lt;/p&gt;</code></pre>
+
+      <p>&nbsp;&nbsp;</p>
+
+      <p><strong>&nbsp;&nbsp;Internal CSS</strong><br /></p>
+
+      <ul>
+        <li>
+          With the help of style tag, we can apply styles within the HTML file
+        </li>
+
+        <li>&nbsp;Redundancy is removed</li>
+
+        <li>But the idea of separation of concerns still lost</li>
+
+        <li>Uniquely applied on a single document</li>
+
+        <li>Example:</li>
+      </ul>
+
+      <pre
+        class="wp-block-code"
+      ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>    &lt; style&gt;
+h1{
+ color:red;
+}
+&lt;/style&gt;  
+&lt;h3&gt; Have a great day &lt;/h3&gt;</code></pre>
+
+      <p><strong>&nbsp;&nbsp;External CSS</strong></p>
+
+      <ul>
+        <li>
+          With the help of &lt;link&gt; tag in the head tag, we can apply styles
+        </li>
+
+        <li>Reference is added&nbsp;</li>
+
+        <li>File saved with .css extension</li>
+
+        <li>Redundancy is removed</li>
+
+        <li>The idea of separation of concerns is maintained</li>
+
+        <li>Uniquely applied to each document</li>
+
+        <li>Example:</li>
+      </ul>
+
+      <pre
+        class="wp-block-code"
+      ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;head&gt;
+&lt;link rel="stylesheet" type="text/css" href="name of the Css file"&gt;
+&lt;/head&gt;
+h1{
+ color:red;         //.css file
+}</code></pre>
+
+      <p>
+        <strong>Implementation of all the three types of CSS:</strong><br />
+      </p>
+
+      <pre
+        class="wp-block-code"
+      ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML&lt;/title&gt;
+&lt;link rel="stylesheet" type="text/css" href="first.css"&gt;
+&lt;style&gt;
+h1
+{
+color:green;
+} 
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This heading will be green&lt;/h1&gt;
+&lt;p style="color:Red"&gt;This paragraph will be red&lt;/p&gt; 
+&lt;p  id="center"&gt;This paragraph will be pink and center-aligned&lt;/p&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+This is Css file
+
+#center {
+text-align: center;
+color:pink;
+}
+</code></pre>
+
+      <h4 class="wp-block-heading" id="output">Output:</h4>
+
+      <p>
+        Check out this
+        <a
+          href="https://www.mygreatlearning.com/academy/learn-for-free/courses/css-properties"
+          target="_blank"
+          rel="noreferrer noopener"
+          >CSS Properties</a
+        >
+        course to learn more about CSS.
+      </p>
+
+      <h2 class="wp-block-heading" id="css-selectors">
+        <strong>CSS Selectors</strong><br />
+      </h2>
+
+      <ul>
+        <li>The selector is used to target elements and apply CSS&nbsp;</li>
+
+        <li>
+          Three simple selectors
+          <ul>
+            <li>Element Selector&nbsp;</li>
+
+            <li>Id Selector</li>
+
+            <li>Class Selector</li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul>
+        <li>Priority of Selectors</li>
+      </ul>
+
+      <p>Id &gt; Class&gt;Element</p>
+
+      <p><strong>&nbsp;&nbsp;Element Selector</strong></p>
+
+      <ul>
+        <li>Used to select HTML elements by its name</li>
+
+        <li>How we do it</li>
+      </ul>
+
+      <pre
+        class="wp-block-code"
+      ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>h1
+{
+Color: red;
+}</code></pre>
+
+      <p>
+        We selected the heading tag and then changed the color property i.e text
+        color to red. Now whatever is written in this tag (content) will have
+        the text color as red. Check out
+        <a
+          href="https://www.mygreatlearning.com/css/free-courses"
+          target="_blank"
+          rel="noreferrer noopener"
+          >CSS course</a
+        >
+        for free
+      </p>
+
+      <p><strong>&nbsp;&nbsp;ID Selector</strong></p>
+
+      <ul>
+        <li>The id attribute is used to select HTML element</li>
+
+        <li>Used to target specific or unique element&nbsp;</li>
+
+        <li>How we do it</li>
+      </ul>
+
+      <pre
+        class="wp-block-code"
+      ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>#unique
+{
+Color: red;
+}
+&lt;h1 id=”unique”&gt; Hi &lt;/p&gt;</code></pre>
+
+      <p>
+        We selected the id and then changed the color property i.e text color to
+        red. Now whatever is written in this tag (content) will have the text
+        color as red&nbsp;
+      </p>
+
+      <p><strong>&nbsp;&nbsp;Class Selector</strong><br /></p>
+
+      <ul>
+        <li>The class attribute is used to select HTML element</li>
+
+        <li>Used to target a specific class of the element&nbsp;</li>
+
+        <li>How we do it</li>
+      </ul>
+
+      <pre
+        class="wp-block-code"
+      ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>group
+{
+Color: red;
+}
+&lt;h1 class=”group”&gt; Hi &lt;/p&gt;</code></pre>
+
+      <p>
+        We selected the class and then changed the color property i.e text color
+        to red. Now whatever is written in this tag (content) will have the text
+        color as red&nbsp;
+      </p>
+
+      <p>
+        <strong>Implementation of all the three selectors in CSS:</strong><br />
+      </p>
+
+      <pre
+        class="wp-block-code"
+      ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML&lt;/title&gt;
+&lt;link rel="stylesheet" type="text/css" href="first.css"&gt;
+&lt;style&gt;
+
+#center1 {
+text-align: center;
+color:pink;
+}
+
+.center2 {
+text-align: center;
+color:red;
+}
+
+h1
+{
+text-align:center;
+color:green;
+} 
+
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This heading will be green  and center-aligned &lt;/h1&gt;
+&lt;p class = "center2"&gt;This paragraph will be red  and center-aligned &lt;/p&gt; 
+&lt;p  id ="center1"&gt;This paragraph will be pink and center-aligned&lt;/p&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+
+      <h4 class="wp-block-heading" id="output">Output:</h4>
+
+      <p>
+        Now that we have seen all the three selectors now let’s see how style
+        falls or cascades. We will implement one program where we add style on
+        the same element by using a tag, id’s, and classes as selectors. The
+        objective of this is to show how one style cuts the other style that
+        might also be referred to as Priority. We will see that id have the
+        highest priority over tags and classes.
+      </p>
+
+      <p>Now let’s see its implementation:<br /></p>
+
+      <pre
+        class="wp-block-code"
+      ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML&lt;/title&gt;
+&lt;style&gt;
+
+p{
+color:red;
+}
+.class {
+color:green;
+}
+#id{
+color:orange;
+}
+
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p id="id" class="class"&gt; This is CSS &lt;/p&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+      <p>
+        If you have observed how one style is fighting against another in order
+        to style the element. Here the race was won by id, what if all the
+        selectors are classes or tags then the one which is closer or applied at
+        the end will win the race and what if a class and tag selectors are used
+        on the same element, in that case, the race will be won by the class
+        selector.<br />
+      </p>
+
+      <h2 class="wp-block-heading" id="css-colors">
+        <strong>CSS Colors</strong><br />
+      </h2>
+
+      <ul>
+        <li>There are different colouring schemes in CSS</li>
+
+        <li>
+          Three widely used techniques are as follows
+          <ul>
+            <li>
+              <strong>RGB</strong>
+              <ul>
+                <li>This starts with RGB and takes 3 parameter</li>
+
+                <li>
+                  3 parameter basically corresponds to red, green and blue
+                </li>
+
+                <li>The value of each parameter may vary from 0 to 255.</li>
+
+                <li>Eg: RGB(255,0,0); means color red</li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>HEX</strong>
+              <ul>
+                <li>
+                  Hex code starts with # and comprises of 6 numbers which are
+                  further divided into 3 sets
+                </li>
+
+                <li>Sets basically correspond to Red, Green, and Blue</li>
+
+                <li>Single set value can vary from 00 to 09 and AA to FF</li>
+
+                <li>Eg: #ff0000 ; means color red</li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>RGBA</strong>
+              <ul>
+                <li>This starts with RGB and takes 4 parameter</li>
+
+                <li>
+                  4 parameter basically corresponds to red, green, blue and
+                  alpha
+                </li>
+
+                <li>
+                  Value of the first three parameters may vary from 0 to 255 and
+                  the last parameter ranges from 0 to 1 that is from 0.1,
+                  0.2,…..0.9
+                </li>
+
+                <li>Eg: RGB(255,0,0,0); means color red</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>
+        <strong>Implementation of different types of colours in CSS:</strong
+        ><br />
+      </p>
+
+      <pre
+        class="wp-block-code"
+      ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>  &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML&lt;/title&gt;
+&lt;link rel="stylesheet" type="text/css" href="first.css"&gt;
+&lt;style&gt;
+#center{   color:#ff0099;}	
+h1{ color:rgba(255,0,0,0.5);} 
+&lt;/style&gt; 
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;This heading will be green&lt;/h1&gt;
+&lt;p style="color:rgb(255,0,0)"&gt;This paragraph will be red&lt;/p&gt; 
+&lt;p  id="center"&gt;This paragraph will be pink and center-aligned&lt;/p&gt; 
+
+&lt;/body&gt; 
+&lt;/html&gt;
+
+This is the output of the above program showing different shades of red.
+</code></pre>
+
+      <h2 class="wp-block-heading" id="css-background">
+        <strong>&nbsp;CSS Background</strong>
+      </h2>
+
+      <ul>
+        <li>
+          There are different ways by which CSS can have an effect on HTML
+          elements
+        </li>
+
+        <li>
+          Few of them are as follows:
+          <ul>
+            <li>Color – used to set the color of the background</li>
+
+            <li>
+              Repeat – used to determine if the image has to repeat or not and
+              if it is repeating then how it should do that
+            </li>
+
+            <li>Image – used to set an image as the background</li>
+
+            <li>Position – used to determine the position of the image</li>
+
+            <li>
+              Attachment – It basically helps in controlling the mechanism of
+              scrolling
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>
+        <strong>Implementation of Background Property in CSS:</strong><br />
+      </p>
+
+      <pre
+        class="wp-block-code"
+      ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML&lt;/title&gt;
+&lt;link rel="stylesheet" type="text/css" href="first.css"&gt;
+&lt;style&gt;
+
+html{
+background: #ff9900;
+}
+
+p{
+background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRT8t-o6oUJ-E9YRhimOvTU2TSH7vlBnRWBN554_rX30dZah466&amp;usqp=CAU");
+
+background-position:center;
+background-repeat:no-repeat;
+
+width: 100%;
+height: 600px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+provident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+&lt;/p&gt; 
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+
+      <h2 class="wp-block-heading" id="css-border">
+        <strong>CSS Border</strong><br />
+      </h2>
+
+      <ul>
+        <li>Helps in setting up the border for HTML elements</li>
+
+        <li>
+          There are 4 properties that can help in setting up of border:
+          <ul>
+            <li>Width – sets the width of the border</li>
+
+            <li>Style – sets the style of border; Eg: solid, dashed etc.</li>
+
+            <li>Color – sets the color of the border</li>
+
+            <li>Radius – determines the roundness of the border</li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          You can set the border for specifically top, right, bottom and left
+        </li>
+
+        <li>
+          We can also club top and bottom together and same goes for left and
+          right
+          <ul>
+            <li>
+              Eg: border-width: 2px 5px; &nbsp; sets top and bottom 2px; left
+              and right 5px
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          Border can also be set in a single line
+          <ul>
+            <li>Eg: border : 2px solid blue;&nbsp;</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p><strong>Implementation of Border Property in CSS:</strong><br /></p>
+
+      <pre
+        class="wp-block-code"
+      ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML&lt;/title&gt;
+&lt;link rel="stylesheet" type="text/css" href="first.css"&gt;
+&lt;style&gt;
+
+p{
+border-style: solid;
+border-color: blue;
+border-width: 2px 5px;
+border-radius: 10%;
+}
+
+
+
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+&lt;/p&gt; 
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+&lt;/p&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</code></pre>
+
+      <p></p>
+
+      <h2 class="wp-block-heading" id="css-boxmodel">
+        <strong>CSS BoxModel</strong><br />
+      </h2>
+
+      <ul>
+        <li>Every element in CSS can be represented using the BOX model</li>
+
+        <li>
+          It allows us to add a border and define space between the content
+        </li>
+
+        <li>It helps the developer to develop and manipulate the elements</li>
+
+        <li>
+          It consists of 4 edges
+          <ul>
+            <li>Content edge – It comprises of the actual content</li>
+
+            <li>Padding edge – It lies in between content and border edge</li>
+
+            <li>Border edge – Padding is followed by the border edge</li>
+
+            <li>
+              Margin edge – It is an outside border and controls the margin of
+              the element
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>
+        When you go in chrome and right-click, go on inspect. It will give all
+        the elements that are used in the HTML file. In the right-hand side,
+        there will be a box model like:<br />
+      </p>
+
+      <p>
+        The most inner rectangle represents our content, the padding is nothing
+        but the space between the content and the border then the margin is the
+        area outside the border.
+      </p>
+
+      <p><strong>Implementation of BoxModel in CSS:</strong><br /></p>
+
+      <pre
+        class="wp-block-code"
+      ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML&lt;/title&gt;
+&lt;link rel="stylesheet" type="text/css" href="first.css"&gt;
+&lt;style&gt;
+
+p{
+border: 2px solid blue;
+margin: 5px;
+padding: 20px;
+content: 50px;
+}
+
+
+
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+&lt;/p&gt; 
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+&lt;/p&gt; 
+&lt;/body&gt;
+&lt;/html&gt;
+
+This is the output of the above program:
+</code></pre>
+
+      <figure
+        class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"
+      >
+        <div class="wp-block-embed__wrapper">
+          <div class="ast-oembed-container" style="height: 100%">
+            <div
+              class="rll-youtube-player"
+              data-src="https://www.youtube.com/embed/F6OoYyOZxHo"
+              data-id="F6OoYyOZxHo"
+              data-query="start=1&amp;feature=oembed"
+              data-alt="Getting Started With CSS | Learn HTML And CSS From Scratch | Great Learning"
+            >
+              <div
+                data-id="F6OoYyOZxHo"
+                data-query="start=1&amp;feature=oembed"
+                data-src="https://www.youtube.com/embed/F6OoYyOZxHo"
+              >
+                <img
+                  data-lazy-src="https://i.ytimg.com/vi/F6OoYyOZxHo/hqdefault.jpg"
+                  alt="Getting Started With CSS | Learn HTML And CSS From Scratch | Great Learning"
+                  width="480"
+                  height="360"
+                  data-ll-status="loaded"
+                  class="entered lazyloaded"
+                  src="https://i.ytimg.com/vi/F6OoYyOZxHo/hqdefault.jpg"
+                /><noscript
+                  ><img
+                    src="https://i.ytimg.com/vi/ID/hqdefault.jpg"
+                    alt=""
+                    width="480"
+                    height="360" /></noscript
+                ><button class="play" aria-label="play Youtube video"></button>
+              </div>
+            </div>
+            <noscript
+              ><iframe
+                title="Getting Started With CSS | Learn HTML And CSS From Scratch | Great Learning"
+                width="1200"
+                height="675"
+                src="https://www.youtube.com/embed/F6OoYyOZxHo?start=1&#038;feature=oembed"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe
+            ></noscript>
+          </div>
+        </div>
+      </figure>
+
+      <h2 class="wp-block-heading" id="css-tutorial-faqs">
+        <strong>CSS Tutorial FAQs</strong>
+      </h2>
+
+      <p><strong>Q: What are the capabilities of CSS?</strong></p>
+
+      <p>
+        <strong>A:</strong> CSS helps in defining text alignment, color, font,
+        size, spacing, borders, layout, and many such typographic
+        characteristics. It can do all of it independently for on-screen as well
+        as printed views.&nbsp;
+      </p>
+
+      <p><strong>Q: What are the three types of CSS?</strong></p>
+
+      <p>
+        <strong>A:</strong> The three types of CSS include Inline CSS, Internal
+        CSS, and External CSS. Inline CSS can be included directly in the HTML
+        elements. Internal CSS is the other way of including CSS by using the
+        style element in the head section of the HTML document. External CSS
+        includes CSS by using an external stylesheet.<br /><br /><strong
+          >Q: Is CSS difficult to learn?</strong
+        >
+      </p>
+
+      <p>
+        <strong>A:</strong> CSS is not difficult to learn but since it is
+        detailed, it can be confusing. Learning the basics of CSS does not take
+        time at all. However, if you want to master CSS, it may take some time
+        for you.
+      </p>
+
+      <p><strong>Q: How can I be good at CSS?</strong></p>
+
+      <p>
+        <strong>A:</strong> You can be good at CSS by wrapping your mind around
+        positioning contexts, mastering floats, knowing your selectors, learning
+        concepts of DRY coding, and knowing your browser support. You also can
+        read some material available on the web to become a pro in CSS.<br /><br /><strong
+          >Q: How can I learn CSS fast?</strong
+        >
+      </p>
+
+      <p>
+        <strong>A:</strong> The fastest way to learn CSS is to first be certain
+        that you know HTML5 as well as the web foundations thoroughly. Once you
+        have a deeper understanding of these key concepts and skills, you will
+        be able to understand CSS and the cool CSS3 techniques easily. CSS3 is
+        the styling language of web design; therefore, it helps in making your
+        websites look awesome.
+      </p>
+
+      <p><strong>Q: How do I start CSS?</strong></p>
+
+      <p>
+        <strong>A:</strong> You can get started with learning CSS in three ways,
+        which include Inline CSS, Internal CSS, and External CSS. You can also
+        find some tutorials that can guide you through learning CSS.<br /><br /><strong
+          >Q: What are the levels of CSS?</strong
+        >
+      </p>
+
+      <p>
+        <strong>A:</strong> Levels of CSS help in building on the previous,
+        filtering definitions and additional features. The feature set in all
+        the higher levels is a superset of any lower level, and the behavior
+        permitted for a specified feature in a higher level is a subcategory of
+        that permitted in the lower levels.
+      </p>
+
+      <p><strong>Q: What are the examples of CSS code?</strong></p>
+
+      <p>
+        <strong>A:</strong> The examples of CSS code include easy paragraph
+        formatting, alteration of letter case, change link colors, eliminate
+        link underlines, make a link button, create a text box, center-align
+        elements, and adjust padding.<br /><br /><strong
+          >Q: What is CSS language?</strong
+        >
+      </p>
+
+      <p>
+        <strong>A:</strong> CSS is the language that is used for defining the
+        presentation of Web pages, which include colors, layout, and fonts. It
+        enables one to adjust the presentation to several types of devices, like
+        small screens, large screens, or printers. CSS can very easily be used
+        with all types of XML-based markup languages.
+      </p>
+
+      <p><strong>Q: What are the three parts of a CSS syntax?</strong></p>
+
+      <p>
+        <strong>A:</strong> The CSS syntax comprises a set of rules. These rules
+        come in three parts such as a property, a selector, and a value.<br /><br /><strong
+          >Q: What are the advantages of CSS?</strong
+        >
+      </p>
+
+      <p><strong>A:</strong> Some of the advantages of CSS include:</p>
+
+      <ul>
+        <li>The layout of a web page is better measured</li>
+
+        <li>
+          Style (CSS) is separate from structure (HTML), which means the reduced
+          file size
+        </li>
+
+        <li>
+          Smaller file size means lesser bandwidth and ultimately means quicker
+          loading time.
+        </li>
+      </ul>
+
+      <p><strong>Q: How do I open a CSS file in Chrome?</strong></p>
+
+      <p>
+        <strong>A:</strong> To open a CSS file in Chrome, you have to open up
+        DevTools, head over to DevTool settings, click open the experiments
+        section, and allow the CSS overview option.
+      </p>
+
+      <p>
+        This brings us to the end of this article where we learned about the
+        basics of CSS. Check out this
+        <a
+          href="https://www.mygreatlearning.com/academy/learn-for-free/courses/front-end-development-html"
+          >front end developer free course</a
+        >
+        from
+        <a
+          href="https://www.mygreatlearning.com/academy"
+          data-internallinksmanager029f6b8e52c="10"
+          title="GLA Homepage links"
+          target="_blank"
+          rel="noopener"
+          >Great Learning Academy</a
+        >
+      </p>
+    </div>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,3028 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="CSS Full Course" content="Learn How to use Css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>CSS FULL COURSE | CSS for Beginners</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/advance-css.css" />
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <article class="article01">
+        <div>
+          <h1>Introduction to CSS | CSS for Beginners</h1>
+        </div>
+        <section class="TOC">
+          <h2>Table of Content</h2>
+          <ul>
+            <li class="active"><a href="#what-is-css">What is CSS?</a></li>
+            <li class=""><a href="#css-history">&nbsp;CSS History</a></li>
+            <li class=""><a href="#css-editors">&nbsp;CSS Editors</a></li>
+            <li class=""><a href="#css-syntax">&nbsp;CSS Syntax</a></li>
+            <li class=""><a href="#css-comment">&nbsp;CSS Comment</a></li>
+            <li class="">
+              <a href="#css-how-to">&nbsp;CSS How-To&nbsp;</a>
+            </li>
+            <li class=""><a href="#css-selectors">CSS Selectors</a></li>
+            <li class=""><a href="#css-colors">CSS Colors</a></li>
+            <li class=""><a href="#css-size-units">CSS Size Units</a></li>
+
+            <li class="">
+              <a href="#css-background">&nbsp;CSS Background</a>
+            </li>
+            <li class=""><a href="#css-border">CSS Border</a></li>
+            <li class=""><a href="#css-boxmodel">CSS BoxModel</a></li>
+            <li class="">
+              <a href="#css-tutorial-faqs">CSS Tutorial FAQs</a>
+            </li>
+            <!-- More ingredients -->
+          </ul>
+        </section>
+        <section class="instructions section-01" id="what-is-css">
+          <h2 class="wp-block-heading">
+            <strong>What is CSS?</strong>
+          </h2>
+
+          <p>
+            CSS stands for Cascading Style Sheets. It&nbsp;is the language for
+            describing the presentation of Web pages, including colours, layout,
+            and fonts, thus making our web pages presentable to the users.
+          </p>
+
+          <p>
+            CSS is designed to make style sheets for the web. It is independent
+            of HTML and can be used with any XML-based markup language. Now
+            let’s try to break the acronym:
+          </p>
+
+          <ul>
+            <li>Cascading: Falling of Styles</li>
+
+            <li>Style: Adding designs/Styling our HTML tags</li>
+
+            <li>Sheets: Writing our style in different documents</li>
+          </ul>
+        </section>
+        <section class="instructions section-02" id="css-history">
+          <h2 class="wp-block-heading">
+            <strong>CSS History</strong>
+          </h2>
+
+          <ul>
+            <li>1994: First Proposed by Hakon Wium Lie on 10th October</li>
+
+            <li>
+              1996: CSS was published on 17th November with influencer Bert Bos
+            </li>
+
+            <li>Later he became co-author of CSS</li>
+
+            <li>
+              1996: CSS became official with CSS was published in December
+            </li>
+
+            <li>1997: Created CSS level 2 on 4th November&nbsp;</li>
+
+            <li>1998: Published on 12th May</li>
+          </ul>
+        </section>
+
+        <section class="instructions section-03" id="css-editors">
+          <h2 class="wp-block-heading">
+            <strong>CSS Editors</strong>
+          </h2>
+
+          <p>
+            Some of the popular editors that are best suited to wire CSS code
+            are as following:
+          </p>
+
+          <ol>
+            <li>Visual Studio Code</li>
+
+            <li>Atom</li>
+
+            <li>Brackets</li>
+
+            <li>Espresso(For Mac OS&nbsp; User)</li>
+
+            <li>Notepad++(Great for HTML &amp; CSS)</li>
+
+            <li>Komodo Edit (Simple)</li>
+
+            <li>Sublime Text (Best Editor)</li>
+          </ol>
+        </section>
+
+        <section class="instructions section-04" id="css-syntax">
+          <h2 class="wp-block-heading">
+            <strong>CSS Structure and Syntax</strong><br />
+          </h2>
+
+          <p><strong> The Structure of CSS</strong></p>
+
+          <p>
+            CSS is composed of rules that define how HTML elements should be
+            displayed. A CSS rule consists of a selector and a declaration
+            block:
+          </p>
+          <ul>
+            <li>
+              Selector: The HTML element(s) you want to style. It can be a
+              single element, a class, an ID, or even a group of elements.
+            </li>
+
+            <li>
+              Declaration Block: Contains one or more declarations, each of
+              which specifies a property and a value (e.g., color: blue;). The
+              declaration block is enclosed in curly braces {}.
+            </li>
+
+            <li>
+              There are three basic selectors namely: tags, id’s, and classes
+            </li>
+
+            <li>Selector: selects the element you want to target</li>
+
+            <li>
+              Property: name(attributes) like color, font-size, background,
+              width, height,etc
+            </li>
+
+            <li>Value: values associated with these properties</li>
+          </ul>
+
+          <pre class="wp-block-code">
+        <code>
+          Selector {
+          Property(name) 1 : value;
+          Property(name) 2 : value;
+          Property(name) 3 : value;
+          }
+
+          For example:
+
+          h1
+          {
+          Color: red;
+          Text-align: center;
+          }
+
+          #unique 
+          {
+          color: green;
+          }
+
+          .section: {
+            font-size: 16px;
+          } 
+        </code>
+      </pre>
+        </section>
+
+        <section class="instructions section-05" id="css-comment">
+          <h2 class="wp-block-heading" id="css-comment">
+            <strong>&nbsp;CSS Comment</strong>
+          </h2>
+
+          <ul>
+            <li>Comments don’t render or display on the browser</li>
+
+            <li>Helps to understand our code better and makes it readable.</li>
+
+            <li>Helps to debug our code</li>
+
+            <li>
+              Two ways to comment:
+              <ul>
+                <li>Single line&nbsp;</li>
+                <li>Multiple line</li>
+              </ul>
+            </li>
+          </ul>
+          <p>Here is how to comment out single lines:</p>
+          <pre
+            class="wp-block-code"
+          ><code> /*&lt;h6&gt; This represents the most/ least important line of the doc. &lt;/h6&gt;*/</code></pre>
+
+          <p>Here is how to comment out multiple lines:</p>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+/*
+h1
+{
+color: red;
+text-align: center;
+} 
+*/</code></pre>
+        </section>
+
+        <section class="instructions section-06" id="css-how-to">
+          <h2 class="wp-block-heading">
+            <strong>CSS How-To</strong>
+          </h2>
+
+          <ul>
+            <li>
+              There are 3 ways to write CSS in our HTML file.
+              <ul>
+                <li>Inline CSS</li>
+
+                <li>Internal CSS</li>
+
+                <li>External CSS</li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              Priority order
+              <ul>
+                <li>Inline &gt; Internal &gt; External</li>
+              </ul>
+            </li>
+          </ul>
+
+          <p><strong>Inline CSS</strong></p>
+          <p>
+            This style is applied directly within an HTML element using the
+            style attribute. It’s useful for small, specific changes but can
+            make the HTML code cluttered.
+          </p>
+
+          <ul>
+            <li>Before CSS this was the only way to apply styles</li>
+
+            <li>Not an efficient way to write as it has a lot of redundancy</li>
+
+            <li>Self-contained</li>
+
+            <li>Uniquely applied on each element</li>
+
+            <li>The idea of separation of concerns was lost</li>
+          </ul>
+
+          <span><strong> Example in code:</strong></span>
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+
+&lt;h3 style="color:red"&gt; Have a great day &lt;/h3&gt;
+&lt;p style="color: green"&gt; I did this , I did that &lt;/p&gt;</code></pre>
+
+          <span><strong> Output in browser:</strong></span>
+          <div
+            class="wp-block-code;"
+            style="margin-top: 10px; font-family: Roboto !important"
+          >
+            <h4 style="color: red">Have a great day</h4>
+            <p style="color: green">I did this, I did that</p>
+          </div>
+
+          <p><strong>&nbsp;&nbsp;Internal CSS</strong><br /></p>
+          <p>
+            Placed within the style tag inside the head section(headtag) of an
+            HTML document, internal CSS allows you to define styles for a single
+            page, keeping the styling separate from the content but still within
+            the same file.
+          </p>
+
+          <ul>
+            <li>
+              With the help of style tag, we can apply styles within the HTML
+              file
+            </li>
+
+            <li>&nbsp;Redundancy is removed</li>
+
+            <li>But the idea of separation of concerns still lost</li>
+
+            <li>Uniquely applied on a single document</li>
+          </ul>
+
+          <span><strong> Example in code:</strong></span>
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>    &lt; style&gt;
+h1{
+ color:red;
+}
+&lt;/style&gt;  
+&lt;h1&gt; Have a great day &lt;/h1&gt;</code></pre>
+
+          <span><strong> Output in browser:</strong></span>
+          <div
+            class="wp-block-code"
+            style="margin-top: 10px; font-family: Roboto !important"
+          >
+            <h1 style="color: red">Have a great day</h1>
+          </div>
+
+          <p><strong>&nbsp;&nbsp;External CSS</strong></p>
+          <p>
+            This method uses a separate .css file linked to the HTML document
+            via the &lt;link /&gt; tag. It’s ideal for maintaining consistent
+            styling across multiple pages, enabling easier updates and cleaner
+            code management.
+          </p>
+
+          <ul>
+            <li>
+              With the help of &lt;link&gt; tag in the head tag, we can apply
+              styles
+            </li>
+
+            <li>Reference is added&nbsp;</li>
+
+            <li>File saved with .css extension</li>
+
+            <li>Redundancy is removed</li>
+
+            <li>The idea of separation of concerns is maintained</li>
+
+            <li>Uniquely applied to each document</li>
+          </ul>
+
+          <span><strong> Example in code:</strong></span>
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+(.html file) 
+&lt;head&gt;
+&lt;link rel="stylesheet" type="text/css" href="name of the Css file"&gt;
+&lt;/head&gt; (passing the .css file link)
+
+&lt;body&gt;
+&lt;h3&gt; Have a great day &lt;/h3&gt;
+&lt;p&gt; I did this , I did that &lt;/p&gt;
+&lt;p&gt; Of course i'm a developer&lt;/p&gt;
+&lt;span&gt; i can implement, design 
+and manipulate any website 
+in the world.&lt;/span&gt;
+&lt;/body&gt;
+
+
+
+(.css file)
+
+h3 {
+ color:red;        
+}
+
+p {
+  color:blue;    
+  font-size: 15px;    
+}
+
+span{
+  font-size: 18px;
+  font-weight: 600;
+  color: purple;
+}
+
+</code></pre>
+
+          <span><strong> Output in browser:</strong></span>
+          <div
+            class="wp-block-code"
+            style="margin-top: 10px; font-family: Roboto !important"
+          >
+            <h3 style="color: red">Have a great day</h3>
+            <p style="color: blue; font-size: 15px">I did this, I did that</p>
+            <p style="color: blue; font-size: 15px">
+              Of course, im a web developer
+            </p>
+            <span style="font-size: 20px; font-weight: 600; color: purple">
+              i can implement, design and manipulate any website in the world.
+            </span>
+          </div>
+
+          <p>
+            <strong>Implementation of all the three types of CSS:</strong><br />
+          </p>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML&lt;/title&gt;
+&lt;link rel="stylesheet" type="text/css" href="first.css"&gt;
+&lt;style&gt;
+h1
+{
+color:green; 
+} 
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This heading will be green&lt;/h1&gt;
+&lt;p style="color:Red"&gt;This paragraph will be red&lt;/p&gt; 
+&lt;p  id="center"&gt;This paragraph will be gold and center-aligned but the
+background will be black&lt;/p&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+This is Css file
+
+#center {
+  color: rgb(216, 158, 12);
+  text-align: center;
+  background: black;
+}
+</code></pre>
+          <span><strong> Output in browser:</strong></span>
+          <div
+            class="wp-block-code"
+            style="margin-top: 10px; font-family: Roboto !important"
+          >
+            <h1 style="color: green">This heading will be green</h1>
+            <p style="color: Red">This paragraph will be red</p>
+            <p
+              style="
+                color: rgb(216, 158, 12);
+                text-align: center;
+                background: black;
+              "
+            >
+              This paragraph will be gold and center-aligned, but the background
+              will be black;
+            </p>
+          </div>
+        </section>
+
+        <section class="instructions section-07" id="css-selectors">
+          <h2 class="wp-block-heading"><strong>CSS Selectors</strong><br /></h2>
+          <ul>
+            <li>
+              The selector is used to target elements and apply CSS Styling to
+              it&nbsp;
+            </li>
+
+            <li>
+              Their are three simple selectors in CSS
+              <ul>
+                <li>Element Selector&nbsp;</li>
+
+                <li>Id Selector</li>
+
+                <li>Class Selector</li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul>
+            <li>Priority of Selectors</li>
+            <ul>
+              <li>Id > Class > Element</li>
+            </ul>
+          </ul>
+
+          <p><strong>&nbsp;&nbsp;Element Selector</strong></p>
+
+          <ul>
+            <li>Used to select HTML elements by its tag name</li>
+
+            <li>How we do it</li>
+          </ul>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>h1
+{
+Color: red;
+}</code></pre>
+
+          <p>
+            We selected the heading tag and then changed the color property i.e
+            text color to red. Now whatever is written in this tag (content)
+            will have the text color as red.
+          </p>
+
+          <p><strong>&nbsp;&nbsp;ID Selector</strong></p>
+
+          <ul>
+            <li>The id attribute is used to select HTML element</li>
+
+            <li>Used to target specific or unique element&nbsp;</li>
+
+            <li>How we do it</li>
+          </ul>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>#unique
+{
+Color: red;
+}
+&lt;h1 id=”unique”&gt; Hi &lt;/p&gt;</code></pre>
+
+          <p>
+            We selected the id and then changed the color property i.e text
+            color to red. Now whatever is written in this tag (content) will
+            have the text color as red&nbsp;
+          </p>
+
+          <p><strong>&nbsp;&nbsp;Class Selector</strong><br /></p>
+
+          <ul>
+            <li>The class attribute is used to select HTML element</li>
+
+            <li>Used to target a specific class of the element&nbsp;</li>
+
+            <li>How we do it</li>
+          </ul>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>group
+{
+Color: red;
+}
+&lt;h1 class=”group”&gt; Hi &lt;/p&gt;</code></pre>
+
+          <p>
+            We selected the class and then changed the color property i.e text
+            color to red. Now whatever is written in this tag (content) will
+            have the text color as red&nbsp;
+          </p>
+
+          <p>
+            <strong>Implementation of all the three selectors in CSS:</strong
+            ><br />
+          </p>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML&lt;/title&gt;
+&lt;link rel="stylesheet" type="text/css" href="first.css"&gt;
+&lt;style&gt;
+
+#center1 {
+text-align: center;
+color:pink;
+}
+
+.center2 {
+text-align: center;
+color:red;
+}
+
+h1
+{
+text-align:center;
+color:green;
+} 
+
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This heading will be green  and center-aligned &lt;/h1&gt;
+&lt;p class = "center2"&gt;This paragraph will be red  and center-aligned &lt;/p&gt; 
+&lt;p  id ="center1"&gt;This paragraph will be pink and center-aligned&lt;/p&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+
+          <p>
+            Now that we have seen all the three selectors now let’s see how
+            style falls or cascades. We will implement one program where we add
+            style on the same element by using a tag, id’s, and classes as
+            selectors. The objective of this is to show how one style cuts the
+            other style that might also be referred to as Priority. We will see
+            that id have the highest priority over tags and classes.
+          </p>
+
+          <p>Now let’s see its implementation:<br /></p>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML&lt;/title&gt;
+&lt;style&gt;
+
+p{
+color:red;
+}
+.class {
+color:green;
+}
+#id{
+color:orange;
+}
+
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p id="id" class="class"&gt; This is CSS &lt;/p&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+          <p>
+            If you have observed how one style is fighting against another in
+            order to style the element. Here the race was won by id, what if all
+            the selectors are classes or tags then the one which is closer or
+            applied at the end will win the race and what if a class and tag
+            selectors are used on the same element, in that case, the race will
+            be won by the class selector.<br />
+          </p>
+
+          <p><strong>Note</strong></p>
+          <ul>
+            <li>
+              Element Selector: Targets HTML elements by their tag name (e.g.,
+              p, h1)
+            </li>
+
+            <li>
+              Class Selector: Targets elements with a specific class attribute.
+              Classes are defined with a period (.) followed by the class name
+              (e.g., .example).
+            </li>
+
+            <li>
+              ID Selector: Targets a single element with a specific ID. IDs are
+              defined with a hash (#) followed by the ID name (e.g., #header).
+            </li>
+
+            <li>
+              Attribute Selector: Targets elements based on attributes and their
+              values (e.g., [type="text"]).
+            </li>
+
+            <li>
+              Pseudo-class Selector: Targets elements in a specific state (e.g.,
+              :hover, :focus).
+            </li>
+
+            <li>
+              .Pseudo-element Selector: Targets a specific part of an element
+              (e.g., ::before, ::after).
+            </li>
+          </ul>
+        </section>
+
+        <section class="instructions section-08" id="css-colors">
+          <h2 class="wp-block-heading"><strong>CSS Colors</strong><br /></h2>
+
+          <ul>
+            <li>There are different colouring schemes in CSS</li>
+
+            <li>
+              Three widely used techniques are as follows
+              <ul>
+                <li>
+                  <strong>RGB Color Scheme</strong>
+                  <ul>
+                    <li>This starts with RGB and takes 3 parameter</li>
+
+                    <li>
+                      3 parameter basically corresponds to red, green and blue
+                    </li>
+
+                    <li>The value of each parameter may vary from 0 to 255.</li>
+                    <ul>
+                      <li>Eg: RGB(255,0,0); means color red</li>
+
+                      <li>Eg: RGB(255,255,255); means color white</li>
+
+                      <li>Eg: RGB(0,0,0); means color black</li>
+                    </ul>
+                  </ul>
+                </li>
+
+                <li>
+                  <strong>HEX Color Scheme</strong>
+                  <ul>
+                    <li>
+                      Hex code starts with # and comprises of 6 numbers which
+                      are further divided into 3 sets
+                    </li>
+
+                    <li>Sets basically correspond to Red, Green, and Blue</li>
+
+                    <li>
+                      Single set value can vary from 00 to 09 and AA to FF
+                    </li>
+                    <li>
+                      Hex color code is the most widely used color code scheme
+                    </li>
+                    <ul>
+                      <li>Eg: #ff0000 ; means color red</li>
+                      <li>Eg: #fffff ; means color white</li>
+                      <li>Eg: #0000 ; means color black</li>
+                    </ul>
+                  </ul>
+                </li>
+
+                <li>
+                  <strong>RGBA Color Scheme</strong>
+                  <ul>
+                    <li>This starts with RGB and takes 4 parameter</li>
+
+                    <li>
+                      4 parameter basically corresponds to red, green, blue and
+                      alpha(transparent)
+                    </li>
+
+                    <li>
+                      Value of the first three parameters may vary from 0 to 255
+                      and the last parameter ranges from 0 to 1 that is from
+                      0.1, 0.2,…..0.9
+                    </li>
+
+                    <li>Eg: RGB(255,0,0,0); means color red</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <p>
+            <strong>Implementation of different types of colours in CSS:</strong
+            ><br />
+          </p>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>  &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML&lt;/title&gt;
+&lt;link rel="stylesheet" type="text/css" href="first.css"&gt;
+&lt;style&gt;
+#center{ 
+   color:#ff0099;    <-----(HEX Color)
+   text-align: center;
+}	
+h1{ 
+  color:rgba(255,0,0,0.5);   <-----(RGBA Color)
+} 
+&lt;/style&gt; 
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;This heading will be dim blue&lt;/h1&gt;
+                        &dArr;---------(RGB Color)
+&lt;p style="color:rgb(255,0,0)"&gt;This paragraph will be red&lt;/p&gt;  
+&lt;p  id="center"&gt;This paragraph will be pink and center-aligned&lt;/p&gt; 
+
+&lt;/body&gt; 
+&lt;/html&gt;
+
+This is the output of the above program showing different shades of red.
+</code></pre>
+
+          <span><strong> Output in browser:</strong></span>
+          <div
+            class="wp-block-code"
+            style="margin-top: 10px; font-family: Roboto !important"
+          >
+            <h1 style="color: rgba(67, 33, 255, 0.5)">
+              This heading will be dim blue
+            </h1>
+            <p style="color: rgb(255, 0, 0)">This paragraph will be red</p>
+            <p style="color: #ff0099; text-align: center">
+              This paragraph will be pink and center-aligned
+            </p>
+          </div>
+        </section>
+
+        <section class="instructions section-09" id="css-size-units">
+          <h2 class="wp-block-heading">
+            <strong>CSS Size Units</strong><br />
+          </h2>
+          <p>
+            CSS sizes are used to define the dimensions, spacing and size of an
+            element on a webpage, such as the width, height, padding, margins,
+            and fonts sizes on a webpage. Using different size units effectively
+            is crucial for responsive layouts, with CSS offering various units
+            for different needs.
+          </p>
+          <ol>
+            <li>
+              <strong> Absolute Units</strong>
+              <br />
+              <span>
+                Absolute units have fixed values, meaning they represent the
+                same size regardless of the context. These units are not
+                affected by the size of other elements or the viewport.
+                <p><strong>Type of absolute units size</strong></p>
+
+                <ul>
+                  <li>
+                    <strong>Pixels (px):</strong> Pixels are the most commonly
+                    used absolute unit in CSS. One pixel is generally considered
+                    as one dot on the screen. Pixels are useful for precise
+                    control, but they do not scale well on different screen
+                    sizes.
+                    <br />
+                    Example: width: 200px;
+                  </li>
+                </ul>
+              </span>
+            </li>
+
+            <li>
+              <strong> Relative Units</strong>
+              <br />
+              <span>
+                Relative units are dynamic and scale in relation to other
+                elements or the viewport. They are essential for creating
+                responsive designs that adapt to different screen
+                <p><strong>Type of relative units size</strong></p>
+
+                <ul>
+                  <li>
+                    <strong>Em (em):</strong>The em unit is relative to the font
+                    size of the parent element. If the parent element has a font
+                    size of 16px, 1em equals 16px. Em is commonly used for font
+                    sizes, padding, and margins because it scales with the
+                    parent’s size.
+                    <br />
+                    Example: font-size: 1.5em; (1.5 times the parent’s font
+                    size)
+                  </li>
+                  <li>
+                    <strong>Rem (rem):</strong> The rem unit is relative to the
+                    root element’s font size (usually the html tag element).
+                    Unlike em, which scales based on its nearest parent, rem
+                    scales based on the root element, providing more consistency
+                    across elements. <br />
+                    Example: margin: 2rem; (2 times the root’s font size)
+                  </li>
+
+                  <li>
+                    <strong>Percentage (%):</strong> Percentages are relative to
+                    the size of the parent element. For example, width: 50% will
+                    make the element half the width of its parent. Percentages
+                    are commonly used for widths, heights, padding, and margins.
+                    <br />Example: width: 100%; (full width of the parent)
+                  </li>
+                </ul>
+              </span>
+            </li>
+          </ol>
+          <span><strong> Example in code: </strong></span>
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>  &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML&lt;/title&gt;
+&lt;link rel="stylesheet" type="text/css" href="first.css"&gt;
+&lt;style&gt;
+
+/* Css Size Styles */
+.container {
+width: 100%; /* makes 100% of the container width */
+height: 400px;
+max-width: 1200px; /*container maximum width is 1200px;
+margin: 0 auto;
+}
+.column {
+width: 33.33%; /* 1/3 the container */
+padding: 1rem;
+}
+
+/* Other Styles For Appearance */
+#column01 {
+background-color: red;
+}
+#column02 {
+background-color: green;
+justify-content: space-between;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#column03 {
+background-color: blue;
+}
+#center-blue {
+color: blue;
+text-align: center;
+}
+h1 {
+color: rgba(67, 33, 255, 0.5);
+}
+&lt;/style&gt; 
+
+&lt;body&gt;
+&lt;section class=".container"&gt;
+ &lt;div class=".column"&gt;
+    &lt;h1&gt;This heading will be dim blue&lt;/h1&gt;
+    &lt;p style="color:rgb(255,0,0)"&gt;This paragraph will be red&lt;/p&gt;  
+    &lt;p id="center-blue"&gt;This paragraph will be blue and center-aligned&lt;/p&gt; 
+ &lt;/div&gt;
+&lt;/section&gt;
+&lt;/body&gt; 
+&lt;/html&gt;
+
+This is the output of the above program showing different shades of red.
+</code></pre>
+
+          <span><strong> Output in browser:</strong></span>
+          <div
+            class="wp-block-code"
+            style="margin-top: 10px; font-family: Roboto !important"
+          >
+            <section class="container">
+              <div class="column" id="column01">
+                <h1>This heading will be dim gold</h1>
+                <p style="color: rgb(255, 0, 0)">This paragraph will be red</p>
+                <p id="center-blue">
+                  This paragraph will be blue and center-aligned
+                </p>
+              </div>
+
+              <div class="column" id="column02">
+                <h1>This heading will be dim gold</h1>
+                <p style="color: rgb(255, 0, 0)">This paragraph will be red</p>
+                <p id="center-blue">
+                  This paragraph will be blue and center-aligned
+                </p>
+              </div>
+
+              <div class="column" id="column03">
+                <h1>This heading will be dim gold</h1>
+                <p style="color: rgb(255, 0, 0)">This paragraph will be red</p>
+                <p id="center-blue">
+                  This paragraph will be blue and center-aligned
+                </p>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="instructions section-10" id="css-background">
+          <h2 class="wp-block-heading">
+            <strong>&nbsp;CSS Background</strong>
+          </h2>
+
+          <ul>
+            <li>
+              There are different ways by which CSS background property can have
+              an effect on HTML elements
+            </li>
+
+            <li>
+              Few of them are as follows:
+              <ul>
+                <li>Color – used to set the color of the background</li>
+
+                <li>
+                  Repeat – used to determine if the image has to repeat or not
+                  and if it is repeating then how it should do that
+                </li>
+
+                <li>Image – used to set an image as the background</li>
+
+                <li>Position – used to determine the position of the image</li>
+
+                <li>
+                  Attachment – It basically helps in controlling the mechanism
+                  of scrolling
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <p>
+            <strong>Implementation of Background Property in CSS:</strong><br />
+          </p>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML&lt;/title&gt;
+&lt;link rel="stylesheet" type="text/css" href="first.css"&gt;
+&lt;style&gt;
+
+html{
+background: #ff9900;
+}
+
+p{
+  color: white;
+  width: 95%;
+  height: 150px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+
+  /* Background Property Styles */
+  background: url("./asset/css-background-img.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+provident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+&lt;/p&gt; 
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+
+          <span><strong> Output in browser:</strong></span>
+          <div
+            class="wp-block-code"
+            style="margin-top: 10px; font-family: Roboto !important"
+          >
+            <p class="css-background">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non provident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </section>
+        <section class="instructions section-11" id="css-border">
+          <h2 class="wp-block-heading"><strong>CSS Border</strong><br /></h2>
+          <ul>
+            <li>Helps in setting up the border for HTML elements</li>
+
+            <li>
+              There are 4 properties that can help in setting up of border:
+              <ul>
+                <li>Width – sets the width of the border</li>
+
+                <li>
+                  Style – sets the style of border; Eg: solid, dashed etc.
+                </li>
+
+                <li>Color – sets the color of the border</li>
+
+                <li>Radius – determines the roundness of the border</li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              You can set the border for specifically top, right, bottom and
+              left
+            </li>
+
+            <li>
+              We can also club top and bottom together and same goes for left
+              and right
+              <ul>
+                <li>
+                  Eg: border-width: 2px 5px; &nbsp; sets top and bottom 2px;
+                  left and right 5px
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              Border can also be set in a single line
+              <ul>
+                <li>Eg: border : 2px solid blue;&nbsp;</li>
+              </ul>
+            </li>
+          </ul>
+
+          <p>
+            <strong>Implementation of Border Property in CSS:</strong><br />
+          </p>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML&lt;/title&gt;
+&lt;link rel="stylesheet" type="text/css" href="first.css"&gt;
+&lt;style&gt;
+
+.p-border {
+  /* Css Border Style */
+  border-style: solid;
+  border-color: rgb(255, 212, 171);
+  border-width: 5px;
+  border-radius: 5%;
+
+  /* Other Styles */
+  padding: 1rem;
+}
+
+
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p class="p-border"&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non provident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+&lt;/p&gt; 
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non provident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+&lt;/p&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</code></pre>
+
+          <span><strong> Output in browser:</strong></span>
+          <div
+            class="wp-block-code"
+            style="margin-top: 10px; font-family: Roboto !important"
+          >
+            <span><strong>With border:</strong></span>
+            <p class="p-border">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non provident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <span><strong>Without border:</strong></span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non provident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </section>
+        <section class="instructions section-12" id="css-boxmodel">
+          <h2 class="wp-block-heading"><strong>CSS BoxModel</strong><br /></h2>
+
+          <p>
+            In CSS, every element is structured according to the Box Model,
+            which is a fundamental concept for controlling layout and spacing.
+            The Box Model defines how elements are displayed on a webpage and
+            consists of four key areas:
+          </p>
+          <ol>
+            <li>
+              Content Edge: This is the innermost part of the box and contains
+              the actual content, such as text or images.
+            </li>
+
+            <li>
+              Padding Edge: Surrounding the content is the padding, which adds
+              space between the content and the border. This space is inside the
+              element's border.
+            </li>
+
+            <li>
+              Border Edge: The border wraps around the padding and content. It
+              can be styled with different widths, colors, and patterns.
+            </li>
+
+            <li>
+              Margin Edge: The margin is the outermost layer, outside the
+              border, and it controls the space between the element and
+              neighboring elements.
+            </li>
+          </ol>
+
+          <p>
+            When you inspect an element in Chrome (right-click > Inspect), the
+            browser visually displays the Box Model on the right side. Here, you
+            can see how content, padding, border, and margin relate to each
+            other. The innermost rectangle represents the content, followed by
+            the padding, then the border, and finally the margin on the outside.
+            This visualization helps developers understand and adjust the layout
+            and spacing of elements on the page.
+          </p>
+
+          <p><strong>Implementation of BoxModel in CSS:</strong><br /></p>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML&lt;/title&gt;
+&lt;link rel="stylesheet" type="text/css" href="first.css"&gt;
+&lt;style&gt;
+
+p-boxmodel{
+border: 2px solid blue;
+margin: 5px;
+padding: 20px;
+content: 50px;
+}
+
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p class="p-boxmodel"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+&lt;/p&gt; 
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+&lt;/p&gt; 
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+          <span><strong> Output in browser:</strong></span>
+          <div
+            class="wp-block-code"
+            style="margin-top: 10px; font-family: Roboto !important"
+          >
+            <span><strong>With boxmodel:</strong></span>
+            <p class="p-boxmodel">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <span><strong>Without boxmodel:</strong></span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </section>
+        <section class="instructions section-13" id="css-boxmodel">
+          <h2 class="wp-block-heading"><strong>CSS BoxModel</strong><br /></h2>
+
+          <p>
+            In CSS, every element is structured according to the Box Model,
+            which is a fundamental concept for controlling layout and spacing.
+            The Box Model defines how elements are displayed on a webpage and
+            consists of four key areas:
+          </p>
+          <ol>
+            <li>
+              Content Edge: This is the innermost part of the box and contains
+              the actual content, such as text or images.
+            </li>
+
+            <li>
+              Padding Edge: Surrounding the content is the padding, which adds
+              space between the content and the border. This space is inside the
+              element's border.
+            </li>
+
+            <li>
+              Border Edge: The border wraps around the padding and content. It
+              can be styled with different widths, colors, and patterns.
+            </li>
+
+            <li>
+              Margin Edge: The margin is the outermost layer, outside the
+              border, and it controls the space between the element and
+              neighboring elements.
+            </li>
+          </ol>
+
+          <p>
+            When you inspect an element in Chrome (right-click > Inspect), the
+            browser visually displays the Box Model on the right side. Here, you
+            can see how content, padding, border, and margin relate to each
+            other. The innermost rectangle represents the content, followed by
+            the padding, then the border, and finally the margin on the outside.
+            This visualization helps developers understand and adjust the layout
+            and spacing of elements on the page.
+          </p>
+
+          <p><strong>Implementation of BoxModel in CSS:</strong><br /></p>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML&lt;/title&gt;
+&lt;link rel="stylesheet" type="text/css" href="first.css"&gt;
+&lt;style&gt;
+
+p-boxmodel{
+border: 2px solid blue;
+margin: 5px;
+padding: 20px;
+content: 50px;
+}
+
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p class="p-boxmodel"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+&lt;/p&gt; 
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+&lt;/p&gt; 
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+          <span><strong> Output in browser:</strong></span>
+          <div
+            class="wp-block-code"
+            style="margin-top: 10px; font-family: Roboto !important"
+          >
+            <span><strong>With boxmodel:</strong></span>
+            <p class="p-boxmodel">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <span><strong>Without boxmodel:</strong></span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </section>
+      </article>
+
+      <article class="article02">
+        <div>
+          <h1>Advanced CSS | CSS for Experts</h1>
+        </div>
+        <section class="TOC">
+          <h2>Table of Content</h2>
+          <ul>
+            <li class="active"><a href="#css-flexbox">CSS Flexbox</a></li>
+            <li class="">
+              <a href="#css-grid-layout">&nbsp;CSS Grid Layout</a>
+            </li>
+            <li class=""><a href="#css-positioning">CSS Positioning</a></li>
+            <li class=""><a href="#css-box-shadow">&nbsp;CSS Box Shadow</a></li>
+            <li class="">
+              <a href="#css-transitions">&nbsp;CSS Transitions</a>
+            </li>
+            <li class=""><a href="#css-animations">&nbsp;CSS Animations</a></li>
+
+            <li class="">
+              <a href="#css-media-queries">CSS Media Queries</a>
+            </li>
+
+            <li class="">
+              <a href="#css-responsive-design">CSS Responsive Design</a>
+            </li>
+
+            <li class=""><a href="#css-variables">&nbsp;CSS Variables</a></li>
+
+            <li class="">
+              <a href="#css-tutorial-faqs">Advance Css Tutorial FAQs</a>
+            </li>
+            <!-- More ingredients -->
+          </ul>
+        </section>
+        <section class="instructions section-14" id="css-flexbox">
+          <h2 class="wp-block-heading">
+            <strong>Css Flexbox</strong>
+          </h2>
+
+          <div class="advanced-heading">
+            <h3>Overview</h3>
+            <p>
+              Flexbox is a one-dimensional layout method for arranging items in
+              a row or column. It provides better control over the alignment,
+              direction, and order of elements within a container, making it
+              perfect for building responsive web designs.
+            </p>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>Key Concepts</h3>
+            <ul>
+              <li>
+                <strong> Flex Container: </strong>The parent element that holds
+                flex items. It is defined using display: flex;.
+              </li>
+
+              <li>
+                <strong>Flex Items:</strong> The children of the flex container.
+              </li>
+            </ul>
+          </div>
+          <div class="advanced-heading">
+            <h3>Main Properties</h3>
+            <ol>
+              <li>
+                <strong>Container Properties</strong>
+
+                <ul style="padding-top: 10px">
+                  <li>
+                    <strong>display: flex;</strong> - Defines the flex
+                    container.
+                  </li>
+                  <li>
+                    <strong>flex-direction:</strong> Defines the direction of
+                    the flex items (row, row-reverse, column, column-reverse).
+                  </li>
+                  <li>
+                    <strong>justify-content:</strong> Aligns items horizontally
+                    (flex-start, flex-end, center, space-between, space-around,
+                    space-evenly).
+                  </li>
+                  <li>
+                    <strong>align-items:</strong> Aligns items vertically
+                    (flex-start, flex-end, center, baseline, stretch).
+                  </li>
+                  <li>
+                    <strong>flex-wrap:</strong> Allows items to wrap onto
+                    multiple lines (nowrap, wrap, wrap-reverse).
+                  </li>
+
+                  <li>
+                    <strong>gap: </strong> The gap property in CSS Flexbox (and
+                    Grid) is used to define the space between items within a
+                    flex container. It’s a shorthand for setting both row-gap
+                    and column-gap and simplifies spacing between flex items
+                    without needing to add margin or padding to individual
+                    items.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong> Item Properties</strong>
+
+                <ul style="padding-top: 10px">
+                  <li>
+                    <strong> flex: </strong>A shorthand for flex-grow,
+                    flex-shrink, and flex-basis.
+                  </li>
+                  <li>
+                    <strong> align-self:</strong> Allows an item to override the
+                    container’s align-items property.
+                  </li>
+
+                  <li><strong>order: </strong>Controls the order of items.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <div class="advanced-heading">
+            <h3>Example: Basic Flexbox Layout in Css</h3>
+          </div>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+html code------------------- &dArr;
+&lt;div class="flex-container"&gt;
+  &lt;div class="flex-item"&gt;Item 1&lt;/div&gt; 
+  &lt;div class="flex-item"&gt;Item 2&lt;/div&gt;
+  &lt;div class="flex-item"&gt;Item 3&lt;/div&gt;
+&lt;/div&gt; 
+
+css code--------------------&dArr;
+.flex-container {
+  display: flex;
+  flex-direction: row; /* Aligns items horizontally */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Aligns items vertically */
+  height: 200px;
+}
+
+.flex-item {
+  background-color: lightcoral;
+  padding: 20px;
+  margin: 5px;
+  color: white;
+  text-align: center;
+  flex: 1; /* Each item takes equal space */
+}
+
+</code></pre>
+          <span><strong> Output in browser:</strong></span>
+          <div
+            class="wp-block-code"
+            style="margin-top: 10px; font-family: Roboto !important"
+          >
+            <div class="flex-container">
+              <div class="flex-item">Item 1</div>
+              <div class="flex-item">Item 2</div>
+              <div class="flex-item">Item 3</div>
+            </div>
+          </div>
+          <div class="advanced-heading">
+            <h3>Flexbox in Action</h3>
+            <ul>
+              <li>
+                <strong> Horizontal Alignment: </strong>By changing
+                justify-content, you can align items to the left, right, or
+                center, or distribute space between them.
+              </li>
+
+              <li>
+                <strong> Vertical Alignment: </strong>Using align-items, you can
+                align items at the top, center, or bottom of the container.
+              </li>
+
+              <li>
+                <strong> Responsive Design: </strong>Flexbox allows items to
+                wrap and adjust their size, making it perfect for responsive
+                layouts.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="instructions section-15" id="css-grid-layout">
+          <h2 class="wp-block-heading">
+            <strong>Css Grid Layout</strong>
+          </h2>
+
+          <div class="advanced-heading">
+            <h3>Overview</h3>
+            <p>
+              Grid Layout is a two-dimensional layout system, meaning it can
+              handle both rows and columns. It provides more precise control
+              over the placement of items on a page, making it ideal for complex
+              designs.
+            </p>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>Key Concepts</h3>
+            <ul>
+              <li>
+                <strong> Grid Container </strong>The parent element that holds
+                grid items. It is defined using "display: grid;".
+              </li>
+
+              <li>
+                <strong>Grid Items: </strong>The children of the grid container.
+              </li>
+            </ul>
+          </div>
+          <div class="advanced-heading">
+            <h3>Main Properties</h3>
+            <ol>
+              <li>
+                <strong>Container Properties</strong>
+
+                <ul style="padding-top: 10px">
+                  <li>
+                    <strong>display: grid;</strong> - Defines the grid
+                    container.
+                  </li>
+                  <li>
+                    <strong>grid-template-columns: </strong> Defines the number
+                    and size of columns.
+                  </li>
+                  <li>
+                    <strong>grid-template-rows: </strong>Defines the number and
+                    size of rows.
+                  </li>
+                  <li>
+                    <strong>grid-gap: </strong>Defines the space between grid
+                    items (row-gap and column-gap).
+                  </li>
+                  <li>
+                    <strong>justify-items: </strong>Aligns items horizontally
+                    within their grid area.
+                  </li>
+
+                  <li>
+                    <strong>align-items: </strong>Aligns items vertically within
+                    their grid area.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong> Item Properties</strong>
+
+                <ul style="padding-top: 10px">
+                  <li>
+                    <strong> grid-column: </strong>Specifies which columns an
+                    item should span.
+                  </li>
+                  <li>
+                    <strong> grid-row: </strong> Specifies which rows an item
+                    should span.
+                  </li>
+
+                  <li>
+                    <strong>justify-self</strong>Aligns an individual item
+                    horizontally.
+                  </li>
+                  <li>
+                    <strong>align-self</strong>Aligns an individual item
+                    vertically.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <div class="advanced-heading">
+            <h3>Example: Basic Flexbox Layout in Css</h3>
+          </div>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+html code------------------- &dArr;
+&lt;div class="grid-container"&gt;
+  &lt;div class="grid-item"&gt;Item 1&lt;/div&gt; 
+  &lt;div class="grid-item"&gt;Item 2&lt;/div&gt;
+  &lt;div class="grid-item"&gt;Item 3&lt;/div&gt;
+  &lt;div class="grid-item"&gt;Item 4&lt;/div&gt;
+&lt;/div&gt; 
+
+css code--------------------&dArr;
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  grid-template-rows: auto; /* Rows adjust to content */
+  gap: 10px; /* Space between grid items */
+}
+
+.grid-item {
+  background-color: lightblue;
+  padding: 20px;
+  margin: 5px;
+  color: white;
+  text-align: center;
+}
+
+</code></pre>
+          <span><strong> Output in browser:</strong></span>
+          <div
+            class="wp-block-code"
+            style="margin-top: 10px; font-family: Roboto !important"
+          >
+            <div class="grid-container">
+              <div class="grid-item">Item 1</div>
+              <div class="grid-item">Item 2</div>
+              <div class="grid-item">Item 3</div>
+              <div class="grid-item">Item 4</div>
+            </div>
+          </div>
+          <div class="advanced-heading">
+            <h3>Grid Layout in Action</h3>
+            <ul>
+              <li>
+                <strong>Defining Grid Structure: </strong>By changing You can
+                set up any number of rows and columns and specify their sizes,
+                like 1fr (fraction of available space) or fixed units like px,
+                em, or %.
+              </li>
+
+              <li>
+                <strong> Placing Items: </strong>Grid Layout allows precise
+                placement of items in specific rows and columns, or even
+                spanning multiple rows and columns.
+              </li>
+
+              <li>
+                <strong> Responsive Design </strong>You can create different
+                grid layouts for different screen sizes using media queries.
+              </li>
+            </ul>
+          </div>
+          <div class="advanced-heading">
+            <h3>Advanced Example: Complex Grid Layout</h3>
+          </div>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+html code------------------- &dArr;
+&lt;div class="grid-container02"&gt;
+&lt;div class="grid-header"&gt;Header&lt;/div&gt; 
+&lt;div class="grid-menu"&gt;Menu&lt;/div&gt;
+&lt;div class="grid-main"&gt;Main Content&lt;/div&gt;
+&lt;div class="grid-sidebar"&gt;Sidebar&lt;/div&gt;
+&lt;div class="grid-footer"&gt;Footer&lt;/div&gt;
+&lt;/div&gt; 
+
+css code--------------------&dArr;
+.grid-container02 {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px; /* 3 columns: fixed, flexible, fixed */
+  grid-template-rows: auto 1fr auto; /* 3 rows: header, main, footer */
+  gap: 10px;
+}
+
+.grid-header {
+  grid-column: 1 / 4; /* Span across all columns */
+  background-color: lightcoral;
+}
+
+.grid-menu {
+  grid-column: 1 / 2; /* First column */
+  background-color: lightblue;
+}
+
+.grid-main {
+  grid-column: 2 / 3; /* Middle column */
+  background-color: lightgreen;
+}
+
+.grid-sidebar {
+  grid-column: 3 / 4; /* Last column */
+  background-color: lightpink;
+}
+
+.grid-footer {
+  grid-column: 1 / 4; /* Span across all columns */
+  background-color: lightgray;
+}
+
+</code></pre>
+
+          <span><strong> Output in browser:</strong></span>
+          <div
+            class="wp-block-code"
+            style="margin-top: 10px; font-family: Roboto !important"
+          >
+            <div class="grid-container02">
+              <div class="grid-header">Header</div>
+              <div class="grid-menu">Menu</div>
+              <div class="grid-main">Main Content</div>
+              <div class="grid-sidebar">Sidebar</div>
+              <div class="grid-footer">Footer</div>
+            </div>
+          </div>
+
+          <p>
+            <strong>Grid Layout </strong> is perfect for more complex,
+            two-dimensional layouts like dashboards, galleries, or entire page
+            structures.
+          </p>
+        </section>
+        <section class="instructions section-16" id="css-positioning">
+          <h2 class="wp-block-heading">
+            <strong>Css Positioning</strong>
+          </h2>
+
+          <div class="advanced-heading">
+            <h3>Overview</h3>
+            <p>
+              CSS positioning is a key aspect of web design that determines how
+              elements are placed on a web page. Understanding positioning helps
+              you control the layout and flow of elements, allowing for more
+              precise and creative designs.
+            </p>
+            <p>
+              There are several positioning schemes in CSS, each serving a
+              unique purpose. Here's everything you need to know about CSS
+              positioning:
+            </p>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>Types of CSS Positioning</h3>
+            <ol>
+              <li>
+                <strong> Static Positioning </strong>
+                <ul style="padding-top: 10px">
+                  <li>
+                    Default Positioning: Every HTML element is positioned static
+                    by default. This means elements are placed in the normal
+                    document flow, one after the other, as they appear in the
+                    HTML.
+                  </li>
+
+                  <li>
+                    No Control: static positioning doesn’t allow any control
+                    over the element's exact position on the page. Top, right,
+                    bottom, and left properties don’t apply to statically
+                    positioned elements.
+                  </li>
+
+                  <li>
+                    Typically used when no specific positioning is needed, and
+                    elements should flow naturally within the document.
+                  </li>
+                </ul>
+
+                <pre
+                  class="wp-block-code"
+                ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>div {
+    position: static; /* This is the default */ 
+   }</code></pre>
+              </li>
+
+              <li>
+                <strong> Relative Positioning</strong>
+                <ul style="padding-top: 10px">
+                  <li>
+                    Position Relative to Itself: An element with position:
+                    relative; is positioned relative to its normal position in
+                    the document flow. The top, right, bottom, and left
+                    properties can be used to adjust its position.
+                  </li>
+
+                  <li>
+                    Doesn’t Affect Other Elements: Moving an element with
+                    relative positioning doesn't affect the position of
+                    surrounding elements.
+                  </li>
+
+                  <li>
+                    position: relative; top: 10px; /* Moves the element 10px
+                    down */ left: 20px; /* Moves the element 20px to the right
+                    */ Adjusting Position Slightly: Useful when you need to
+                    nudge an element without disrupting the flow of the
+                    document.
+                  </li>
+                  <pre
+                    class="wp-block-code"
+                  ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>div {
+      position: relative;
+      top: 10px;  /* Moves the element 10px down */
+      left: 20px; /* Moves the element 20px to the right */
+   }</code></pre>
+                </ul>
+              </li>
+              <li>
+                <strong>Absolute Positioning</strong>
+                <ul style="padding-top: 10px">
+                  <li>
+                    Position Relative to the Nearest Positioned Ancestor: An
+                    element with position: absolute; is removed from the normal
+                    document flow and positioned relative to its nearest
+                    positioned ancestor (any parent with position: relative;,
+                    absolute;, or fixed;). If no such ancestor exists, it will
+                    be positioned relative to the initial containing block
+                    (usually the viewport).
+                  </li>
+
+                  <li>
+                    Free Placement: You can place the element anywhere using
+                    top, right, bottom, and left properties.
+                  </li>
+
+                  <li>
+                    Overlapping Elements: Perfect for creating overlays,
+                    tooltips, dropdowns, or any elements that need to be
+                    positioned independently of the document flow.
+                  </li>
+                  <pre
+                    class="wp-block-code"
+                  ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>.container{
+     position: relative; /* Positioned ancestor */
+      }
+
+.abs-element {
+  position: absolute;
+  top: 50px;  /* 50px from the top of the container */
+  right: 20px; /* 20px from the right of the container */
+}</code></pre>
+                </ul>
+              </li>
+              <li>
+                <strong>Fixed Positioning</strong>
+                <ul style="padding-top: 10px">
+                  <li>
+                    Fixed to the Viewport: An element with position: fixed; is
+                    positioned relative to the viewport, not any ancestor. This
+                    means it stays fixed in place even when the page is
+                    scrolled.
+                  </li>
+
+                  <li>
+                    Useful for Sticky Elements: Fixed elements stay in the same
+                    position regardless of scroll, making them ideal for sticky
+                    headers, footers, or floating action buttons.
+                  </li>
+
+                  <li>
+                    Sticky Headers/Footers: Often used for elements that need to
+                    remain visible while scrolling, such as navigation bars,
+                    back-to-top buttons, or persistent sidebars.
+                  </li>
+                  <pre
+                    class="wp-block-code"
+                  ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>.fixed-element {
+        position: fixed;
+        top: 0; /* Sticks to the top of the viewport */
+        left: 0; /* Sticks to the left of the viewport */
+        width: 100%;
+        background-color: #333;
+      }</code></pre>
+                </ul>
+              </li>
+              <li>
+                <strong>Sticky Positioning</strong>
+                <ul style="padding-top: 10px">
+                  <li>
+                    Hybrid of Relative and Fixed: position: sticky; is a mix of
+                    relative and fixed positioning. An element with sticky
+                    positioning behaves like a relative element until it reaches
+                    a specified point (determined by top, right, bottom, or
+                    left), at which point it becomes fixed.
+                  </li>
+
+                  <li>
+                    Scroll-based Positioning: Sticky elements are great for
+                    creating elements that stay within a section until a certain
+                    scroll position is reached.
+                  </li>
+
+                  <li>
+                    Interactive Content: Useful for creating sticky headers that
+                    follow you down the page until the next section, or for
+                    sticky table headers that remain in view while scrolling.
+                  </li>
+
+                  <pre
+                    class="wp-block-code"
+                  ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>.sticky-element {
+        position: sticky;
+        top: 10px; /* Becomes fixed 10px from the top of the viewport */
+        background-color: yellow;
+      }</code></pre>
+                </ul>
+              </li>
+            </ol>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>Understanding Z-Index in Css Positioning</h3>
+            <p>
+              The z-index property in CSS is used in conjunction with
+              positioning to control the stacking order of elements on a web
+              page. It determines which elements appear on top of others when
+              they overlap.
+            </p>
+            <ul>
+              <li>
+                Stacking Order: z-index controls the stacking order of
+                positioned elements (elements with position: relative;,
+                absolute;, fixed;, or sticky;). Elements with a higher z-index
+                appear in front of elements with a lower z-index.
+              </li>
+
+              <li>
+                Only Applies to Positioned Elements: It has no effect on
+                elements with position: static;.
+              </li>
+
+              <li>
+                Layering Elements: Essential for creating complex layouts where
+                elements overlap, such as pop-ups, modals, or layered
+                backgrounds.
+              </li>
+            </ul>
+
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+.element1 {
+position: absolute;
+z-index: 1; /* Behind element2 */
+background-color: red;
+}
+
+.element2 {
+position: absolute;
+z-index: 2; /* In front of element1 */
+background-color: blue;
+}
+
+In this example, element2 will appear on top of element1 because it has a higher z-index value.
+            </code></pre>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>Practical Example: Combining Positioning Techniques</h3>
+            <p>
+              Imagine a webpage with a fixed navigation bar at the top, a sticky
+              sidebar that stays in view while scrolling through the content,
+              and a modal popup positioned absolutely in the center of the page.
+            </p>
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+html code------------------- &dArr; (copy code into new html file)
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;HTML&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="./css-positioning.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+    &lt;header class="header-section"&gt;
+      &lt;nav class="navbar"&gt;Navigation Bar&lt;/nav&gt; 
+    &lt;/header&gt; 
+
+    &lt;main class="main-section"&gt;
+      &lt;div class="sidebar"&gt;Sidebar Content&lt;/div&gt;
+      &lt;div class="content-area"&gt;
+        &lt;div class="content"&gt;Main Content&lt;/div&gt;
+        &lt;div class="content"&gt;Modal Popup&lt;/div&gt;
+      &lt;/div&gt; 
+    &lt;/main&gt; 
+
+  &lt;/body&gt; 
+&lt;/html&gt;
+
+
+css code--------------------&dArr; (copy code into external css file)
+/* Fixed Navigation Bar - Fixed Position */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  z-index: 1000; /* Ensures it stays on top */
+}
+
+/* Main Section - Default Position */
+.main-section {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Sticky Sidebar - Sticky Position */
+.sidebar {
+  position: sticky;
+  top: 60px; /* Sticks after scrolling 60px */
+  width: 200px;
+  background-color: rgba(255, 233, 233, 0.932);
+  text-align: center;
+  height: 100vh; /* Full height */
+}
+
+/* Content Area - Relative Position */
+.content-area {
+  position: relative;
+  width: 100%;
+}
+
+.content-area .content {
+  padding: 20px;
+  height: 100vh;
+  border: 1px solid lightcoral;
+}
+
+/* Modal Popup - Absolute Position  */
+.content-area .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2000; /* Above the navbar */
+  cursor: pointer;
+}
+
+/* Footer Section - Default Position  */
+.footer-section {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+            </code></pre>
+
+            <span><strong> Output in browser:</strong></span>
+            <div
+              class="wp-block-code"
+              style="margin-top: 10px; font-family: Roboto !important"
+            >
+              <iframe
+                src="./pages/css-positioning.html"
+                frameborder="0"
+                width="100%"
+                height="600px"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+        <section class="instructions section-17" id="css-box-shadow">
+          <h2 class="wp-block-heading">
+            <strong>Css Box Shadow</strong>
+          </h2>
+
+          <div class="advanced-heading">
+            <h3>Overview</h3>
+            <p>
+              The box-shadow property in CSS allows you to add shadows to
+              elements, giving them depth and a more layered, realistic
+              appearance. This property is highly customizable, enabling you to
+              create a variety of shadow effects, from subtle to dramatic.
+            </p>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>Basic Syntax</h3>
+            <p>The box-shadow property is defined as follows:</p>
+
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+              box-shadow: offset-x offset-y blur-radius spread-radius color;
+</code></pre>
+          </div>
+          <div class="advanced-heading">
+            <h3>Main Properties</h3>
+            <ol>
+              <li>
+                box-shadow: offset-x offset-y blur-radius spread-radius color;
+              </li>
+
+              <li>
+                offset-y: The vertical distance of the shadow from the element.
+                A positive value moves the shadow down, while a negative value
+                moves it up.
+              </li>
+
+              <li>
+                blur-radius (optional): Defines the blur radius of the shadow. A
+                larger value makes the shadow more blurred, while a value of 0
+                makes it sharp.
+              </li>
+
+              <li>
+                spread-radius (optional): Controls the size of the shadow.
+                Positive values increase the size, while negative values
+                decrease it.
+              </li>
+
+              <li>
+                color: Defines the color of the shadow. You can use any valid
+                CSS color format (e.g., named colors, hex, rgba, etc.).
+              </li>
+            </ol>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>Example: Basic Box Shadow</h3>
+          </div>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+html code------------------- &dArr;
+&lt;div class="box"&gt;&lt;/div&gt; 
+
+css code--------------------&dArr;
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  box-shadow: 10px 10px 5px #888888; /* Horizontal 10px, Vertical 10px, Blur 5px, Color #888888 */
+}
+</code></pre>
+          <span><strong> Output in browser:</strong></span>
+          <div
+            class="wp-block-code"
+            style="margin-top: 10px; font-family: Roboto !important"
+          >
+            <div class="box"></div>
+          </div>
+          <div class="advanced-heading">
+            <h3>Explanation:</h3>
+            <ul>
+              <li>
+                <strong> Offset-x:</strong> 10px (shadow moves 10px to the
+                right).
+              </li>
+
+              <li>
+                <strong> Offset-y: </strong>10px (shadow moves 10px down).
+              </li>
+
+              <li><strong> Blur-radius:</strong>#888888 (a medium gray).</li>
+
+              <li><strong> Color:</strong>#888888 (a medium gray).</li>
+            </ul>
+
+            <p>
+              The above code creates a light blue box with a shadow that is 10px
+              to the right and down from the box, with a slight blur.
+            </p>
+          </div>
+          <div class="advanced-heading">
+            <h3>Adding Multiple Shadows</h3>
+          </div>
+
+          <p>
+            You can apply multiple shadows to a single element by separating
+            each shadow definition with a comma.
+          </p>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+html code------------------- &dArr;
+
+&lt;div class="box-multiple"&gt;&lt;/div&gt; 
+
+
+css code--------------------&dArr;
+.box-multiple {
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5), -5px -5px 5px rgba(255,255,255,0.7);
+}
+
+</code></pre>
+
+          <span><strong> Output in browser:</strong></span>
+          <div
+            class="wp-block-code"
+            style="margin-top: 10px; font-family: Roboto !important"
+          >
+            <div class="box-multiple"></div>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>Inset Shadows Property In Box Shadow</h3>
+
+            <p>
+              By default, shadows are applied outside the element's box.
+              However, you can create an inner shadow using the inset keyword,
+              which makes the shadow appear inside the element.
+            </p>
+
+            <div class="advanced-heading">
+              <h3>Example: Inset Box Shadow</h3>
+            </div>
+
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+  html code------------------- &dArr;
+  &lt;div class="box-inset"&gt;&lt;/div&gt; 
+  
+  css code--------------------&dArr;
+  .box-inset {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  box-shadow: inset 10px 10px 15px rgba(0, 0, 0, 0.5);
+  }
+  </code></pre>
+            <span><strong> Output in browser:</strong></span>
+            <div
+              class="wp-block-code"
+              style="margin-top: 10px; font-family: Roboto !important"
+            >
+              <div class="box-inset"></div>
+            </div>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>Explanation:</h3>
+            <ul>
+              <li>
+                <strong> Inset</strong> The inset keyword moves the shadow
+                inside the box.
+              </li>
+
+              <li>
+                <strong> Offset-x and Offset-y: </strong>10px each, moving the
+                shadow inward from the top left.
+              </li>
+
+              <li>
+                <strong> Blur-radius:</strong>15px for a softer, more diffused
+                shadow.
+              </li>
+
+              <li>
+                <strong> Color:</strong>rgba(0, 0, 0, 0.5) for a
+                semi-transparent black shadow.
+              </li>
+            </ul>
+
+            <p>
+              This creates an inner shadow that gives the box a sunken effect.
+            </p>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>Practical Example: Card Design with Box Shadow</h3>
+
+            <p>Here's how you might use box-shadow in a card design:</p>
+
+            <div class="advanced-heading">
+              <h3>Example in Code</h3>
+            </div>
+
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+  html code------------------- &dArr;
+  &lt;div class="card-shadow"&gt;
+    &lt;h2&gt;Card Title&lt;/h2&gt; 
+    &lt;p&gt;This is a simple card with a box shadow.&lt;/p&gt; 
+  &lt;/div&gt; 
+  
+  css code--------------------&dArr;
+  .card-shadow {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .card-shadow h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .card-shadow p {
+    font-size: 1em;
+    color: #333;
+  }
+  </code></pre>
+            <span><strong> Output in browser:</strong></span>
+            <div
+              class="wp-block-code"
+              style="margin-top: 10px; font-family: Roboto !important"
+            >
+              <div class="card-shadow">
+                <h2>Card Title</h2>
+                <p>This is a simple card with a box shadow.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>Explanation:</h3>
+            <ul>
+              <li>
+                <strong>Box Shadow:</strong> The box-shadow property here
+                creates a subtle, layered shadow effect that gives the card a
+                floating look. The first shadow (0 4px 8px rgba(0, 0, 0, 0.1))
+                is a smaller, sharper shadow, while the second one (0 6px 20px
+                rgba(0, 0, 0, 0.1)) is larger and more diffused.
+              </li>
+            </ul>
+
+            <p>
+              This example creates a clean and modern card with a soft shadow,
+              perfect for UI components.
+            </p>
+          </div>
+        </section>
+
+        <section class="instructions section-18" id="css-transitions">
+          <h2 class="wp-block-heading">
+            <strong>Css Transitions</strong>
+          </h2>
+
+          <div class="advanced-heading">
+            <h3>Overview</h3>
+            <p>
+              CSS Transitions allow you to change property values smoothly over
+              a specified duration, providing an engaging visual experience to
+              users. Instead of abruptly switching from one style to another,
+              transitions enable a gradual transformation, making interactions
+              and animations more polished.
+            </p>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>What Are CSS Transitions?</h3>
+            <p>
+              CSS Transitions let you define the transition effect that should
+              be applied when a CSS property changes. This can be triggered by
+              various events, such as hovering over an element, clicking it, or
+              changing the class of an element.
+            </p>
+
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+transition: property duration timing-function delay;
+</code></pre>
+          </div>
+          <div class="advanced-heading">
+            <h3>Main Properties</h3>
+            <ol>
+              <li>
+                <strong> property:</strong> The name of the CSS property you
+                want to animate (e.g., width, height, color). You can use all to
+                apply the transition to all animatable properties.
+              </li>
+
+              <li>
+                <strong> duration:</strong> The time it takes for the transition
+                to complete (e.g., 1s, 500ms).
+              </li>
+
+              <li>
+                <strong>timing-function:</strong> Describes how the intermediate
+                states of the transition are calculated. Common values include
+                ease, linear, ease-in, ease-out, and ease-in-out.
+              </li>
+
+              <li>
+                <strong> delay (optional):</strong> The time to wait before
+                starting the transition.
+              </li>
+            </ol>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>Example: Simple Transition on Hover</h3>
+          </div>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+
+html code------------------- &dArr;
+&lt;button class="btn-transition">Hover Me&gt;
+
+css code--------------------&dArr;
+.btn-transition {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease, transform 0.3s ease-in-out;
+}
+
+.btn-transition:hover {
+  background-color: #2ecc71;
+  transform: scale(1.1);
+}
+</code></pre>
+          <span><strong> Output in browser:</strong></span>
+          <div
+            class="wp-block-code"
+            style="margin-top: 10px; font-family: Roboto !important"
+          >
+            <button class="btn-transition">Hover Me</button>
+          </div>
+          <div class="advanced-heading">
+            <h3>Explanation:</h3>
+            <ul>
+              <li>
+                <strong> Property: </strong> background-color and transform are
+                the properties being transitioned.
+              </li>
+
+              <li>
+                <strong> Duration: </strong>0.5s for background-color, 0.3s for
+                transform.
+              </li>
+
+              <li>
+                <strong>Timing-function: </strong>ease for a smooth start and
+                end, ease-in-out for the scale effect.
+              </li>
+
+              <li>
+                <strong> Effect: </strong>When the button is hovered, its
+                background color changes from blue to green, and it slightly
+                enlarges.
+              </li>
+            </ul>
+          </div>
+          <div class="advanced-heading">
+            <h3>Multiple Properties Transitions</h3>
+          </div>
+
+          <p>
+            You can transition multiple properties at the same time by
+            separating them with commas.
+          </p>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+html code------------------- &dArr;
+&lt;div class="box-transition2"&gt;&lt;/div&gt; 
+
+
+css code--------------------&dArr;
+.box-transition2 {
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  transition: width 2s, height 2s, background-color 2s;
+}
+
+.box-transition2:hover {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+}
+
+</code></pre>
+
+          <span><strong> Output in browser:</strong></span>
+          <div
+            class="wp-block-code"
+            style="margin-top: 10px; font-family: Roboto !important"
+          >
+            <div class="box-transition2"></div>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>Explanation:</h3>
+          </div>
+
+          <p>
+            This example changes the width, height, and background color of the
+            box over 2 seconds when hovered.
+          </p>
+
+          <div class="advanced-heading">
+            <h3>Common Timing Functions In Css Transition</h3>
+            <ul>
+              <li>
+                <strong>Ease:</strong> Starts slow, speeds up, then slows down.
+              </li>
+
+              <li>
+                <strong>Linear:</strong> Maintains a constant speed from start
+                to finish.
+              </li>
+
+              <li>
+                <strong> ease-in </strong> Starts slow and then speeds up.
+              </li>
+
+              <li>
+                <strong> ease-out</strong> Starts fast and then slows down.
+              </li>
+
+              <li>
+                <strong> ease-in-out</strong> Combines ease-in and ease-out for
+                a smooth start and finish.
+              </li>
+
+              <li>
+                <strong>cubic-bezier(n, n, n, n): </strong>Allows for custom
+                timing functions using cubic-bezier curves.
+              </li>
+            </ul>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>Transition Delay In Css Transition</h3>
+            <p>
+              The delay parameter allows you to set a delay before the
+              transition starts.
+            </p>
+
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>&lt;!DOCTYPE html&gt;
+html code------------------- &dArr;
+&lt;div class="delayedbox-transition"&gt;&lt;/div&gt; 
+
+
+css code--------------------&dArr;
+.delayedbox-transition {
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  transition: width 2s 1s; /* 1s delay */
+}
+
+.delayedbox-transition:hover {
+  width: 200px;
+}
+
+</code></pre>
+
+            <span><strong> Output in browser:</strong></span>
+            <div
+              class="wp-block-code"
+              style="margin-top: 10px; font-family: Roboto !important"
+            >
+              <div class="delayedbox-transition"></div>
+            </div>
+
+            <div class="advanced-heading">
+              <h3>Explanation:</h3>
+            </div>
+
+            <p>
+              Here, the width change will start 1 second after the hover event.
+            </p>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>Transition Shorthand</h3>
+            <p>
+              The transition property is often written in shorthand to keep the
+              CSS concise.
+            </p>
+
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+css code--------------------&dArr;
+<strong>Trnasition Shorthand</strong>
+.element {
+  transition: all 0.5s ease-in-out 0.2s;
+}
+
+<strong>This is equivalent to:</strong>
+.element {
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.2s;
+}
+</code></pre>
+
+            <p>
+              By understanding how to control transitions with properties like
+              duration, timing-function, and delay, you can create visually
+              engaging and responsive designs that bring your web pages to life.
+            </p>
+          </div>
+        </section>
+
+        <section class="instructions section-19" id="css-animations">
+          <h2 class="wp-block-heading">
+            <strong>Css Animations</strong>
+          </h2>
+
+          <div class="advanced-heading">
+            <h3>Overview</h3>
+            <p>
+              CSS animations allow you to animate transitions between CSS
+              property values without JavaScript. Animations are controlled
+              using keyframes and properties such as animation-duration,
+              animation-timing-function, and more. Here's a more detailed
+              breakdown of CSS animations.
+            </p>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>Key Components of CSS Animation</h3>
+            <ol>
+              <li>
+                <strong>@keyframes Rule:</strong> The @keyframes rule specifies
+                the intermediate steps (or "keyframes") in the animation
+                sequence. Each keyframe defines a specific point in the
+                animation sequence by using percentages (from 0% to 100%) or the
+                keywords from (equivalent to 0%) and to (equivalent to 100%).
+                <span>
+                  Inside each keyframe, you can specify which CSS properties you
+                  want to animate. CSS properties that can be animated include
+                  colors, dimensions, positioning, opacity, and more.
+                </span>
+
+                <pre
+                  class="wp-block-code"
+                ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+  css code--------------------&dArr;
+  @keyframes animation-name {
+    0% {
+      /* Initial styles */
+    }
+    50% {
+      /* Midway styles */
+    }
+    100% {
+      /* Final styles */
+    }
+  }
+  </code></pre>
+              </li>
+
+              <li>
+                <strong> CSS Animation Properties: </strong> After defining the
+                keyframes, you apply them to an element using the following
+                properties:
+                <ul>
+                  <li>
+                    <strong>animation-name: </strong>Specifies the name of the
+                    keyframes to be applied.
+                  </li>
+
+                  <li>
+                    <strong> animation-duration:</strong> Defines how long the
+                    animation should take to complete one cycle (e.g., 2s for 2
+                    seconds).
+                  </li>
+
+                  <li>
+                    <strong> animation-timing-function: </strong>Describes how
+                    the animation progresses over time (e.g., linear, ease,
+                    ease-in, etc.).
+                  </li>
+
+                  <li>
+                    <strong> animation-delay:</strong> Specifies a delay before
+                    the animation starts.
+                  </li>
+
+                  <li>
+                    <strong>animation-iteration-count:</strong> Defines how many
+                    times the animation will play (e.g., infinite for looping
+                    forever).
+                  </li>
+
+                  <li>
+                    <strong> animation-direction:</strong> Specifies whether the
+                    animation should play in reverse on alternate cycles
+                    (normal, reverse, alternate, alternate-reverse).
+                  </li>
+
+                  <li>
+                    <strong> animation-fill-mode:</strong> Defines what styles
+                    are applied before/after the animation.
+                  </li>
+
+                  <li>
+                    <strong>animation-play-state: </strong> whether the
+                    animation is running or paused.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>Example with Explanations</h3>
+
+            <p>
+              Here's a more advanced example to showcase all of these features
+              in use:
+            </p>
+          </div>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+
+html code------------------- &dArr;
+&lt;div class="animated-box"&gt;&lt;/div&gt; 
+
+css code--------------------&dArr;
+@keyframes slideAndFade {
+  0% {
+    transform: translateX(0); /* No movement */
+    opacity: 1; /* Fully visible */
+    background-color: red;
+  }
+  50% {
+    transform: translateX(200px); /* Move to the right */
+    opacity: 0.5; /* Half opacity */
+    background-color: yellow;
+  }
+  100% {
+    transform: translateX(0); /* Move back to the original position */
+    opacity: 1; /* Fully visible */
+    background-color: green;
+  }
+}
+
+.animated-box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: slideAndFade;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+
+</code></pre>
+          <span><strong> Output in browser:</strong></span>
+          <div
+            class="wp-block-code"
+            style="margin-top: 10px; font-family: Roboto !important"
+          >
+            <div class="animated-box"></div>
+          </div>
+          <div class="advanced-heading">
+            <h3>Animation Timing Function</h3>
+            <p>
+              The animation-timing-function controls the speed curve of the
+              animation. Common values include:
+            </p>
+            <ul>
+              <li>
+                <strong>linear: </strong>The animation has a constant speed.
+              </li>
+              <li>
+                <strong> ease:</strong> The default value, which starts slowly,
+                accelerates, and then slows down.
+              </li>
+              <li>
+                <strong>ease-in: </strong>The animation starts slow, then speeds
+                up.
+              </li>
+              <li>
+                <strong>ease-out:</strong> The animation starts fast and then
+                slows down.
+              </li>
+              <li>
+                <strong> ease-in-out:</strong> The animation starts and ends
+                slowly, with a faster middle section.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="instructions section-20" id="css-media-queries">
+          <h2 class="wp-block-heading">
+            <strong>Css Media Queries</strong>
+          </h2>
+
+          <p>
+            CSS Media Queries are a powerful tool that allows you to apply
+            different styles based on the characteristics of the device or
+            browser window. Media queries enable responsive design, which helps
+            websites adapt to various screen sizes, orientations, and
+            resolutions. <br />This makes it easy to ensure a website looks good
+            on all devices, from large desktop monitors to small mobile phones.
+          </p>
+
+          <div class="advanced-heading">
+            <h3>Basic Syntax</h3>
+          </div>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+css code--------------------&dArr;
+@media (condition) {
+  /* CSS rules go here */
+}
+</code></pre>
+
+          <p>
+            You specify the condition within parentheses. If that condition is
+            true (e.g., the screen width is less than 600px), the styles inside
+            the media query will be applied.
+          </p>
+
+          <div class="advanced-heading">
+            <h3>Common Media Query Conditions</h3>
+
+            <ul>
+              <li>
+                <strong>width / min-width / max-width:</strong>The width of the
+                browser window.
+              </li>
+              <li>
+                <strong> height / min-height / max-height:</strong>
+                The height of the browser window.
+              </li>
+              <li>
+                <strong>orientation</strong>Can be either landscape or portrait.
+                up.
+              </li>
+            </ul>
+          </div>
+
+          <div class="advanced-heading">
+            <h3>Example in Code</h3>
+            <p>
+              Here’s an example to demonstrate how media queries work in a
+              responsive design.
+            </p>
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+css code--------------------&dArr;
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.responsive-box {
+  width: 100%;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* Default styles for large screens */
+.responsive-box {
+  background-color: blue;
+}
+
+/* Styles for screens smaller than 768px (tablets and smaller) */
+@media (max-width: 768px) {
+  .responsive-box {
+    background-color: green;
+  }
+}
+
+/* Styles for screens smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+  .responsive-box {
+    background-color: red;
+  }
+}
+</code></pre>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p>
+        Instructor:
+        <a href="https://theincredibledaniel.com.ng">The Incredible Daniel</a>
+      </p>
+    </footer>
+  </body>
+</html>
