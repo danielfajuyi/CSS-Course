@@ -373,6 +373,7 @@ h1{
 and manipulate any website 
 in the world.&lt;/span&gt;
 &lt;/body&gt;
+&lt;/html&gt;
 
 
 
@@ -1448,7 +1449,9 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </li>
 
             <li class="">
-              <a href="#css-responsive-design">CSS Responsive Design</a>
+              <a href="#css-simple-responsive-design-examples"
+                >CSS Simple Responsive Design Examples</a
+              >
             </li>
 
             <li class=""><a href="#css-variables">&nbsp;CSS Variables</a></li>
@@ -2966,8 +2969,8 @@ css code--------------------&dArr;
                 The height of the browser window.
               </li>
               <li>
-                <strong>orientation</strong>Can be either landscape or portrait.
-                up.
+                <strong>orientation: </strong>Can be either landscape or
+                portrait.
               </li>
             </ul>
           </div>
@@ -2981,8 +2984,14 @@ css code--------------------&dArr;
             <pre
               class="wp-block-code"
             ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+html code------------------- &dArr;
+&lt;div class="responsive-container"&gt;
+  &lt;div class="responsive-box"&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;               
 css code--------------------&dArr;
-body {
+.responsive-container {
   font-family: Arial, sans-serif;
   padding: 20px;
 }
@@ -3013,7 +3022,114 @@ body {
   }
 }
 </code></pre>
+
+            <span><strong> Output in browser:</strong></span>
+            <div
+              class="wp-block-code"
+              style="margin-top: 10px; font-family: Roboto !important"
+            >
+              <div class="responsive-container">
+                <div class="responsive-box"></div>
+              </div>
+            </div>
+
+            <div class="advanced-heading">
+              <h3>Explanation</h3>
+
+              <ol>
+                <li>
+                  <strong>Default Styles (Desktop):</strong> The
+                  <b>.box </b>class has a <b>blue background color</b> by
+                  default, meaning it will apply to larger screens (desktops and
+                  laptops) by default.
+                </li>
+                <li>
+                  <strong>Tablet Styles (@media (max-width: 768px)):</strong>
+                  When the screen width is less than or equal to
+                  <b>768 pixels(px)</b>, the <b>.box </b>background color
+                  changes to green, which is typical for <b>tablet screens.</b>
+                </li>
+                <li>
+                  <strong>Mobile Styles (@media (max-width: 480px)):</strong>
+                  When the screen width is less than or equal to
+                  <b>480 pixels(px)</b>, the <b>.box</b> background color
+                  changes to red, typically for <b>mobile devices.</b>
+                </li>
+              </ol>
+            </div>
+            <div class="advanced-heading">
+              <h3>Combining Multiple Conditions</h3>
+              <p>
+                You can combine multiple conditions using <b>and,</b> <b>or</b>,
+                and <b>not.</b> You would mostly need to use the <b>and</b> than
+                the others when designing a responsive site.
+              </p>
+            </div>
+
+            <h3>Example in Code</h3>
+            <p>
+              Here’s an example to demonstrate how media queries work in a
+              responsive design.
+            </p>
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+css code--------------------&dArr;
+/* Style for screens between 600px and 1200px */
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .responsive-container {
+    background-color: blanchedalmond;
+  }
+}
+</code></pre>
           </div>
+        </section>
+
+        <section
+          class="instructions section-21"
+          id="css-simple-responsive-design-examples"
+        >
+          <h2 class="wp-block-heading">
+            <strong>CSS Simple Responsive Design Examples</strong>
+          </h2>
+
+          <p>
+            Here are 10 simplified examples of CSS media queries for responsive
+            design, each demonstrating different ways you can use them to create
+            responsive designs.
+          </p>
+
+          <h3>1. Change Background Color for Mobile Devices</h3>
+
+          <pre
+            class="wp-block-code"
+          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+html code------------------- &dArr;
+&lt;div class="media-container"&gt;
+  &lt;div class="media-box"&gt;
+   Resize the browser to see the background change for mobile screens.
+  &lt;/div&gt;
+&lt;/div&gt;  
+
+css code--------------------&dArr;
+media-container {
+  background-color: lightblue; /* Default background */
+}
+
+/* When screen width is 600px or less (mobile) */
+@media (max-width: 600px) {
+  media-container {
+    background-color: lightgreen; /* Mobile background */
+  }
+}
+</code></pre>
+
+          <p>
+            You specify the condition within parentheses. If that condition is
+            true (e.g., the screen width is less than 600px), the styles inside
+            the media query will be applied.
+          </p>
         </section>
       </article>
     </main>
