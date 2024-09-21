@@ -22,6 +22,7 @@
         <div>
           <h1>Introduction to CSS | CSS for Beginners</h1>
         </div>
+
         <section class="TOC">
           <h2>Table of Content</h2>
           <ul>
@@ -3100,11 +3101,12 @@ css code--------------------&dArr;
             responsive designs.
           </p>
 
-          <h3>1. Change Background Color for Mobile Devices</h3>
+          <div>
+            <h3>1. Change Background Color for Mobile Devices</h3>
 
-          <pre
-            class="wp-block-code"
-          ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
 html code------------------- &dArr;
 &lt;div class="media-container"&gt;
   &lt;div class="media-box"&gt;
@@ -3124,12 +3126,294 @@ media-container {
   }
 }
 </code></pre>
+          </div>
 
-          <p>
-            You specify the condition within parentheses. If that condition is
-            true (e.g., the screen width is less than 600px), the styles inside
-            the media query will be applied.
-          </p>
+          <div>
+            <h3>2. Change Font Size Based on Screen Width</h3>
+
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+html code------------------- &dArr;
+&lt;div class="media-container"&gt;
+  &lt;div class="media-box"&gt;
+  &lt;p&gt;Resize the browser to see the font size change on smaller screens&lt;/p&gt;  
+  &lt;/div&gt;
+&lt;/div&gt;  
+
+css code--------------------&dArr;
+p {
+font-size: 24px; /* Default font size */
+}
+
+/* When screen width is 768px or less (tablet or smaller) */
+@media (max-width: 768px) {
+p {
+  font-size: 18px; /* Smaller font for smaller screens */
+}
+}
+
+/* When screen width is 480px or less (mobile) */
+@media (max-width: 480px) {
+p {
+  font-size: 14px; /* Even smaller font for mobile screens */
+}
+}
+</code></pre>
+          </div>
+
+          <div>
+            <h3>3. Hide an Element on Small Screens</h3>
+
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+html code------------------- &dArr;
+&lt;div class="sidebar-res"&gt;This is a sidebar. Resize the browser to hide this element.&lt;/div&gt;  
+
+css code--------------------&dArr;
+.sidebar-res {
+  width: 300px;
+  background-color: lightcoral;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Hide sidebar when screen width is 600px or less */
+@media (max-width: 600px) {
+  .sidebar-res {
+    display: none;
+  }
+}
+</code></pre>
+          </div>
+
+          <div>
+            <h3>4. Change Layout on Tablet Screens</h3>
+
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+html code------------------- &dArr;
+&lt;div class="container-res">
+  &lt;div class="box-res"&gt;&lt;/div&gt;  
+  &lt;div class="box-res"&gt;&lt;/div&gt;
+  &lt;div class="box-res"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+css code--------------------&dArr;
+.container-res {
+  display: flex;
+  flex-direction: row; /* Default layout */
+  gap: 10px;
+}
+
+.box-res {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+}
+
+/* Change layout direction to column when width is 768px or less (tablet) */
+@media (max-width: 768px) {
+  .container-res {
+    flex-direction: column;
+  }
+}
+</code></pre>
+          </div>
+
+          <div>
+            <h3>5. Change Image Size Based on Mobile and Tablet Screen</h3>
+
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+html code------------------- &dArr;                                               
+&lt;img src="https://via.placeholder.com/400" id="image-res"&gt;
+
+css code--------------------&dArr;
+#image-res {
+  width: 300px; /* Default image size */
+}
+/* Change image size when width is 768px or less (tablet) */
+@media (max-width: 768px) {
+  #image-res {
+    width: 200px; /* Smaller size for Retina displays */
+  }
+}
+/* Change image size when width is 480px or less (tablet) */
+@media (max-width: 480px) {
+  #image-res {
+    width: 100px; /* Smaller size for Retina displays */
+  }
+}
+</code></pre>
+          </div>
+
+          <div>
+            <h3>6. Change Button Size on Mobile Devices</h3>
+
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+html code------------------- &dArr;                                               
+&lt;button class="button-res"&gt;Click Me!&lt;/button&gt;  
+
+css code--------------------&dArr;
+.button-res {
+  padding: 20px 40px;
+  font-size: 22px;
+}
+
+/* Decrease button size for mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .button-res {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+}
+</code></pre>
+          </div>
+
+          <div>
+            <h3>7. Change Navigation Layout for Mobile</h3>
+
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+html code------------------- &dArr;                                               
+&lt;div class="nav-res"&gt;
+  &lt;a href="#"&gt;Home&lt;/a&gt;  
+  &lt;a href="#"&gt;About&lt;/a&gt;  
+  &lt;a href="#"&gt;Services&lt;/a&gt;  
+  &lt;a href="#"&gt;Contact&lt;/a&gt;  
+&lt;/div&gt;  
+
+css code--------------------&dArr;
+.nav-res {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-res a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Stack navigation items vertically for mobile screens */
+@media (max-width: 600px) {
+  .nav-res {
+    flex-direction: column;
+  }
+
+  .nav-res a {
+    padding: 20px;
+  }
+}
+</code></pre>
+          </div>
+
+          <div>
+            <h3>8. Change Image Grid Layout for Mobile and Tablets</h3>
+
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+html code------------------- &dArr;                                               
+&lt;div class="grid-res"&gt;
+  &lt;div class="grid-item-res"&gt;1&lt;/div&gt;  
+  &lt;div class="grid-item-res"&gt;2&lt;/div&gt;  
+  &lt;div class="grid-item-res"&gt;3&lt;/div&gt;  
+  &lt;div class="grid-item-res"&gt;4&lt;/div&gt;  
+&lt;/div&gt;  
+
+css code--------------------&dArr;
+.grid-res {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.grid-item-res {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 2 columns for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .grid-res {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 1 column for mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .grid-res {
+    grid-template-columns: 1fr;
+  }
+}
+</code></pre>
+          </div>
+
+          <div>
+            <h3>9. Responsive Typography for Larger Screens</h3>
+
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+html code------------------- &dArr;                                               
+&lt;h1 class="h1-res"&gt;Responsive Typography Example&lt;/h1&gt;  
+&lt;p&gt;Resize the browser to see the heading change on larger screens.&lt;/p&gt;  
+
+css code--------------------&dArr;
+.h1-res {
+  font-size: 24px;
+}
+
+/* Increase heading font size on larger screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .h1-res {
+    font-size: 48px;
+  }
+}
+</code></pre>
+          </div>
+
+          <div>
+            <h3>10. Adjust Content Padding Based on Screen Size</h3>
+
+            <pre
+              class="wp-block-code"
+            ><sider-code-explain id="sider-code-explain" data-gpts-theme="light"></sider-code-explain><code>
+html code------------------- &dArr;                                               
+&lt;div class="content-res"&gt;This is some responsive content. Resize the browser to see the padding change.&lt;/div&gt;  
+
+css code--------------------&dArr;
+.content-res {
+  background-color: lightgray;
+  padding: 40px;
+}
+
+/* Reduce padding for tablets */
+@media (max-width: 768px) {
+  .content-res {
+    padding: 20px;
+  }
+}
+
+/* Even smaller padding for mobile screens */
+@media (max-width: 480px) {
+  .content-res {
+    padding: 10px;
+  }
+}
+</code></pre>
+          </div>
         </section>
       </article>
     </main>
